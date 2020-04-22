@@ -456,7 +456,6 @@ button.checkout {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .free-shipping i {
-  padding-right: 15px;
   font-size: 45px;
   color: #838182;
 }
@@ -573,15 +572,11 @@ button.checkout {
 }
 .content .sales-off .furnitures {
   height: 563px;
-  position: relative;
   background-image: url(https://dummyimage.com/640x360/444/ccc);
-  background-size: contain;
 }
 .content .sales-off .furnitures .furniture {
-  position: absolute;
-  bottom: 70px;
+  top: 230px;
   left: 60px;
-  color: white;
 }
 .content .sales-off .furnitures .furniture .title {
   font-size: 13px;
@@ -599,6 +594,7 @@ button.checkout {
   line-height: 1;
 }
 .content .sales-off .furnitures .furniture p {
+  max-width: 360px;
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -658,9 +654,10 @@ button.checkout {
 }
 .content .sales-off .acrylics {
   height: 275px;
-  background-image: url(https://dummyimage.com/294x275/eee/222);
   padding: 35px 30px;
   margin-bottom: 19px;
+  background-image: url(https://dummyimage.com/294x275/eee/222);
+  background-size: cover;
 }
 .content .sales-off .acrylics .title {
   font-size: 18px;
@@ -684,8 +681,9 @@ button.checkout {
 }
 .content .sales-off .chairs {
   height: 269px;
-  background-image: url(https://dummyimage.com/294x269/eee/222);
   padding-left: 23px;
+  background-image: url(https://dummyimage.com/294x269/eee/222);
+  background-size: cover;
 }
 .content .sales-off .chairs .title {
   padding: 30px 0;
@@ -755,6 +753,7 @@ button.checkout {
   height: 334px;
   padding-right: 40px;
   background-image: url(https://dummyimage.com/414x334/eee/222);
+  background-size: cover;
 }
 .content .categories .accessories .title {
   padding-top: 40px;
@@ -892,9 +891,11 @@ button.checkout {
 .content .featureds .furnitures .furniture {
   height: 210px;
   background-image: url(https://dummyimage.com/400x210/eee/222);
+  background-size: cover;
 }
 .content .featureds .furnitures .furniture.recommend {
   background-image: url(https://dummyimage.com/400x210/ccc/222);
+  background-size: cover;
 }
 .content .featureds .furnitures .title {
   padding-top: 34px;
@@ -1003,13 +1004,27 @@ button.checkout {
 #footer {
   background-color: #F5F5F5;
 }
-#footer .info {
-  padding: 50px 0 60px 0;
-  color: #939393;
-}
 #footer .free-shipping {
   padding: 45px 0;
   border-bottom: 1px solid #E0E0E0;
+}
+#footer .info {
+  padding: 50px 0 60px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #939393;
+}
+#footer .title {
+  padding-bottom: 30px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #535353;
+}
+#footer li {
+  line-height: 2.6;
+}
+#footer li a {
+  color: #838182;
 }
 #footer .logos {
   font-size: 13px;
@@ -1039,12 +1054,6 @@ button.checkout {
   font-weight: 800;
   color: #535353;
 }
-#footer .signs .subscribe {
-  padding-top: 5px;
-  padding-bottom: 22px;
-  font-size: 13px;
-  font-weight: 600;
-}
 #footer .signs .social-media {
   font-size: 16px;
 }
@@ -1052,7 +1061,7 @@ button.checkout {
   color: #939393;
 }
 #footer .signs .input-container {
-  width: 218px;
+  max-width: 218px;
   font-size: 12px;
   border: 1px solid #939393;
   border-radius: 20px;
@@ -1067,19 +1076,38 @@ button.checkout {
   padding: 4px;
   color: #939393;
 }
-#footer .title {
-  padding-bottom: 30px;
-  font-size: 14px;
-  font-weight: 800;
+#footer .signs .input-container.subscribe-btn {
+  width: 260px;
+  height: 42px;
+  font-size: 12px;
+}
+#footer .signs .input-container.subscribe-btn input {
+  width: 65%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#footer .signs .input-container.subscribe-btn input::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
   color: #535353;
 }
-#footer li {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 2.6;
+#footer .signs .input-container.subscribe-btn input::-moz-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
+  color: #535353;
 }
-#footer li a {
-  color: #838182;
+#footer .signs .input-container.subscribe-btn input::-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: 700;
+  color: #535353;
+}
+#footer .signs .input-container.subscribe-btn a {
+  width: 35%;
+  line-height: 42px;
+  padding: 0;
+  background: #757575;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 #footer .bottom {
   padding: 23px 0;
@@ -1097,6 +1125,9 @@ button.checkout {
 }
 #footer .bottom i {
   font-size: 18px;
+}
+#footer .bottom .payment img {
+  width: 280px;
 }
 @media (min-width: 1200px) {
   .container {
@@ -1116,7 +1147,7 @@ button.checkout {
     padding-right: 110px;
   }
   #footer .logos {
-    padding-right: 100px;
+    padding-right: 50px;
   }
 }
 /*about us*/
@@ -1222,13 +1253,11 @@ button.checkout {
   top: 45%;
 }
 .abouts .content .team .thumbnail .cover .social-media a {
-  display: inline-block;
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50%;
   background-color: #535353;
-  color: white;
   font-size: 20px;
 }
 .abouts .content .team .you {
@@ -1305,6 +1334,11 @@ button.checkout {
 }
 .abouts #footer .bottom {
   padding: 20px 0 105px 0;
+}
+@media (min-width: 1200px) {
+  .about #footer .logos {
+    padding-right: 100px;
+  }
 }
 .contacts .navbar-nav .products .arrow {
   display: none;

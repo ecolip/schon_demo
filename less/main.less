@@ -518,7 +518,6 @@ button{
 
 .free-shipping{
 	i{
-		padding-right: 15px;
 		font-size: 45px;
 		color: @fz_gray3;
 	}
@@ -639,14 +638,10 @@ button{
 		}		
 		.furnitures{
 			height: 563px;
-			position: relative;			
 			background-image: url(https://dummyimage.com/640x360/444/ccc);
-			background-size: contain;
 			.furniture{
-				position: absolute;
-				bottom: 70px;
+				top: 230px;
 				left: 60px;
-				color: white;
 				.title{
 					font-size: 13px;
 					letter-spacing: 3px;
@@ -663,6 +658,7 @@ button{
 					line-height: 1;					
 				}
 				p{
+					max-width: 360px;
 					font-size: 12px;
 					letter-spacing: 1px;
 				}
@@ -724,9 +720,10 @@ button{
 		}
 		.acrylics{
 			height: 275px;
-			background-image: url(https://dummyimage.com/294x275/eee/222);
 			padding: 35px 30px;
 			margin-bottom: 19px;
+			background-image: url(https://dummyimage.com/294x275/eee/222);
+			background-size: cover;
 			.title{
 				font-size: 18px;
 				font-weight: 700;
@@ -750,8 +747,9 @@ button{
 		}
 		.chairs{
 			height: 269px;
-			background-image: url(https://dummyimage.com/294x269/eee/222);
 			padding-left: 23px;
+			background-image: url(https://dummyimage.com/294x269/eee/222);
+			background-size: cover;
 			.title{
 				padding: 30px 0;
 				font-size: 18px;
@@ -828,6 +826,7 @@ button{
 			height: 334px;
 			padding-right: 40px;
 			background-image: url(https://dummyimage.com/414x334/eee/222);
+			background-size: cover;
 			.title{
 				padding-top: 40px;
 				font-size: 15px;
@@ -979,8 +978,10 @@ button{
 			.furniture{
 				height: 210px;
 				background-image: url(https://dummyimage.com/400x210/eee/222);
+				background-size: cover;
 				&.recommend{
 					background-image: url(https://dummyimage.com/400x210/ccc/222);
+					background-size: cover;
 				}
 			}
 			.title{
@@ -1102,14 +1103,28 @@ button{
 }
 #footer{
 	background-color: @footer_bg;
-	.info{
-		padding: 50px 0 60px 0;	
-		color: @fz_gray2;
-	}	
 	.free-shipping{
 		padding: 45px 0;
 		border-bottom: 1px solid @fz_light_gray3;
 	}
+	.info{
+		padding: 50px 0 60px 0;	
+		font-size: 13px;
+		font-weight: 600;
+		color: @fz_gray2;
+	}
+	.title{
+		padding-bottom: 30px;
+		font-size: 14px;
+		font-weight: 800;		
+		color: @fz_deep_gray;
+	}
+	li{
+		line-height: 2.6;
+		a{
+			color: @fz_gray3;
+		}
+	}	
 	.logos{
 		font-size: 13px;
 		font-weight: 600;
@@ -1139,12 +1154,6 @@ button{
 			font-weight: 800;		
 			color: @fz_deep_gray;
 		}
-		.subscribe{
-			padding-top: 5px;
-			padding-bottom: 22px;
-			font-size: 13px;
-			font-weight: 600;
-		}
 		.social-media{
 			font-size: 16px;
 			a{
@@ -1152,7 +1161,7 @@ button{
 			}
 		}
 		.input-container{
-			width: 218px;
+			max-width: 218px;
 			font-size: 12px;
 			border: 1px solid @fz_gray2;
    			border-radius: 20px;
@@ -1166,20 +1175,39 @@ button{
 				padding: 4px;
 				color: @fz_gray2;
 			}
-		}
-	}
-	.title{
-		padding-bottom: 30px;
-		font-size: 14px;
-		font-weight: 800;		
-		color: @fz_deep_gray;
-	}
-	li{
-		font-size: 13px;
-		font-weight: 600;
-		line-height: 2.6;
-		a{
-			color: @fz_gray3;
+			&.subscribe-btn{
+				width: 260px;
+				height: 42px;
+				font-size: 12px;
+				input{
+					width: 65%;
+					border-top-left-radius: 20px;
+					border-bottom-left-radius: 20px;
+					&::-webkit-input-placeholder{
+						font-size: 12px;
+						font-weight: 700;
+						color: @fz_deep_gray;
+					}
+					&::-moz-input-placeholder{
+						font-size: 12px;
+						font-weight: 700;
+						color: @fz_deep_gray;
+					}
+					&::-ms-input-placeholder{
+						font-size: 12px;
+						font-weight: 700;
+						color: @fz_deep_gray;
+					}
+				}
+				a{
+					width: 35%;
+					line-height: 42px;
+					padding: 0;
+					background: @fz_gray4;
+					border-top-right-radius: 20px;
+					border-bottom-right-radius: 20px;
+				}
+			}
 		}
 	}
 	.bottom{
@@ -1198,7 +1226,11 @@ button{
 		i{
 			font-size: 18px;
 		}
-
+		.payment{
+			img{
+				width: 280px;
+			}
+		}
 	}
 }
 
@@ -1225,7 +1257,7 @@ button{
 	}
 	#footer{
 		.logos{
-			padding-right: 100px;
+			padding-right: 50px;
 		}
 	}
 }
