@@ -15,14 +15,8 @@ nav .icon-shopping-bag,
 nav .icon-mic-outline {
   font-size: 24px;
 }
-.container {
-  padding: 0;
-}
 .container-md {
   margin: 0 auto;
-}
-.row {
-  margin: 0;
 }
 .icon-euro {
   margin-left: -6px;
@@ -574,7 +568,8 @@ button.checkout {
   margin-right: -10px;
   margin-left: -10px;
 }
-.content .sales-off .col-xl-6 {
+.content .sales-off .col-xl-6,
+.content .sales-off .col-md-6 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -723,8 +718,8 @@ button.checkout {
   margin-right: -10px;
   margin-left: -10px;
 }
-.content .categories .col-xl-4,
-.content .categories .col-xl-8 {
+.content .categories .col-lg-4,
+.content .categories .col-lg-8 {
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -996,18 +991,22 @@ button.checkout {
   letter-spacing: 4px;
   color: #939393;
 }
-.content .brands .carousel {
-  margin-bottom: 70px;
-}
-.content .brands .carousel img {
+.content .brands .item img {
   width: 90%;
   margin: 0 auto;
 }
-.content .brands .carousel span {
-  color: #939393;
+.content .brands .owl-carousel .owl-nav button.owl-prev,
+.content .brands .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  font-size: 20px;
+  color: #C0C0C0;
 }
-.content .brands .carousel .carousel-control-prev {
-  justify-content: start;
+.content .brands .owl-prev,
+.content .brands .owl-next {
+  top: 8px;
+}
+.content .brands .owl-next {
+  right: 0;
 }
 #footer {
   background-color: #F5F5F5;
@@ -1137,10 +1136,14 @@ button.checkout {
 #footer .bottom .payment img {
   width: 280px;
 }
-@media (min-width: 576px) {
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
+@media (min-width: 992px) {
+  .categories .col-lg-4 {
+    flex: 0 0 35.5%;
+    max-width: 35.5%;
+  }
+  .categories .col-lg-8 {
+    flex: 0 0 64.5%;
+    max-width: 64.5%;
   }
 }
 @media (min-width: 1200px) {
