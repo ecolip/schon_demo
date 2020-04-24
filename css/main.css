@@ -1345,11 +1345,11 @@ button.checkout {
 }
 .abouts .content .workspace .owl-prev {
   top: 240px;
-  left: -50px;
+  left: 0px;
 }
 .abouts .content .workspace .owl-next {
   top: 240px;
-  right: -50px;
+  right: 0px;
 }
 .abouts .content .workspace .owl-dots {
   padding-top: 25px;
@@ -1373,7 +1373,21 @@ button.checkout {
 .abouts #footer .bottom {
   padding: 20px 0 105px 0;
 }
+@media (min-width: 576px) {
+  .abouts .content .workspace .owl-prev {
+    left: -20px;
+  }
+  .abouts .content .workspace .owl-next {
+    right: -20px;
+  }
+}
 @media (min-width: 1200px) {
+  .abouts .workspace .owl-prev {
+    left: -50px;
+  }
+  .abouts .workspace .owl-next {
+    right: -50px;
+  }
   .abouts #footer .logos {
     padding-right: 50px;
   }
