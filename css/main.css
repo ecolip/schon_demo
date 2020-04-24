@@ -285,11 +285,11 @@ button.checkout {
   color: #A1A1A1;
 }
 /*dropdown-menu*/
+.navbar-nav .dropdown-menu {
+  top: 120%;
+}
 .navbar-nav .bags .dropdown-menu {
-  display: none;
   width: 380px;
-  position: absolute;
-  top: 140%;
   right: -70%;
   left: unset;
 }
@@ -333,18 +333,17 @@ button.checkout {
 .navbar-nav .bags .dropdown-menu .check-btn {
   background-color: black;
 }
-.navbar-nav .products .dropdown-menu {
-  top: 150%;
-  left: -300%;
-}
-.navbar-nav .products .dropdown-menu .arrow {
+.navbar-nav .products .arrow {
   display: none;
-  top: -8px;
-  left: 37%;
+  top: 140%;
+  right: 50%;
+  z-index: 1000;
 }
-.navbar-nav .products .dropdown-menu .container {
+.navbar-nav .products .dropdown-menu {
   width: 1200px;
-  padding: 65px 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 60px;
 }
 .navbar-nav .products .dropdown-menu .box {
   padding-bottom: 30px;
@@ -372,7 +371,7 @@ button.checkout {
 }
 .navbar-nav .products .dropdown-menu .chairs {
   padding: 30px 0 40px 40px;
-  margin-left: 40px;
+  margin-left: 20px;
   background-image: url(https://dummyimage.com/294x318/eee/333);
 }
 .navbar-nav .products .dropdown-menu .chairs .title {
@@ -399,18 +398,17 @@ button.checkout {
   width: 24px;
 }
 .navbar-nav .searchs .dropdown-menu {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  padding: 0 20px;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-}
-.navbar-nav .searchs .dropdown-menu .box {
+  width: 1200px;
   height: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 135%;
+  border: none;
   background-color: #F1F1F1;
+}
+.navbar-nav .searchs .dropdown-menu.active {
+  display: block;
 }
 .navbar-nav .searchs .dropdown-menu .input-container {
   padding-top: 220px;
@@ -443,7 +441,7 @@ button.checkout {
   font-size: 18px;
   color: #A1A1A1;
 }
-.navbar-nav .searchs .dropdown-menu .icon-cancel-2 {
+.navbar-nav .searchs .dropdown-menu .icon-cancel-1 {
   cursor: pointer;
   font-size: 24px;
   color: #A1A1A1;
@@ -1158,6 +1156,9 @@ button.checkout {
   }
 }
 /*about us*/
+.abouts .navbar-nav .products .arrow {
+  top: 135%;
+}
 .abouts .navbar-nav .products .dropdown-menu .sofas,
 .abouts .navbar-nav .products .dropdown-menu .totem {
   height: 109px;
@@ -1293,27 +1294,12 @@ button.checkout {
 .abouts .content .workspace {
   margin-bottom: 150px;
 }
-.abouts .content .workspace .row {
-  margin-right: -7px;
-  margin-left: -7px;
+.abouts .content .workspace .owl-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.abouts .content .workspace .col-5,
-.abouts .content .workspace .col-6,
-.abouts .content .workspace .col-7,
-.abouts .content .workspace .col-12 {
-  padding-right: 7px;
-  padding-left: 7px;
-}
-.abouts .content .workspace .img-1 {
-  height: 542px;
-}
-.abouts .content .workspace .img-2,
-.abouts .content .workspace .img-3 {
-  height: 308px;
-}
-.abouts .content .workspace .img-4 {
-  height: 220px;
-  margin-top: 14px;
+.abouts .content .workspace .owl-carousel .owl-item img {
+  display: inline-block;
 }
 .abouts .content .workspace .img-left,
 .abouts .content .workspace .img-right {
@@ -1324,22 +1310,19 @@ button.checkout {
 .abouts .content .workspace .img-right {
   right: 0;
 }
-.abouts .content .workspace .owl-carousel {
-  position: static;
-}
 .abouts .content .workspace .owl-prev,
 .abouts .content .workspace .owl-next {
   position: absolute;
-  font-size: 40px;
-  color: white;
+  top: 50%;
+  font-size: 100px;
+  color: #A1A1A1;
+  transform: translateY(-50%);
 }
 .abouts .content .workspace .owl-prev {
-  top: 240px;
-  left: 8%;
+  left: 50px;
 }
 .abouts .content .workspace .owl-next {
-  top: 240px;
-  right: 8%;
+  right: 50px;
 }
 .abouts .content .workspace .owl-dots {
   padding-top: 25px;
@@ -1353,6 +1336,21 @@ button.checkout {
 }
 .abouts .content .workspace .owl-dot.active {
   background: #A1A1A1;
+}
+.abouts .content .workspace .img-1 {
+  width: 542px;
+}
+.abouts .content .workspace .img-2 {
+  width: 240px;
+  height: 308px;
+}
+.abouts .content .workspace .img-3 {
+  width: 384px;
+  height: 308px;
+}
+.abouts .content .workspace .img-4 {
+  width: 640px;
+  height: 220px;
 }
 .abouts #footer .signs .subtitle {
   padding-top: 23px;
@@ -1369,6 +1367,7 @@ button.checkout {
   }
 }
 .contacts .navbar-nav .products .arrow {
+  top: 135%;
   border-color: transparent transparent black transparent;
 }
 .contacts .navbar-nav .products .dropdown-menu {
@@ -1737,13 +1736,12 @@ button.checkout {
 .blog-full-width #footer-simple .logos .infos .address {
   padding-top: 30px;
 }
-.product-detail .navbar-nav .products .dropdown-menu .container {
+.product-detail .navbar-nav .products .arrow {
+  top: 135%;
+}
+.product-detail .navbar-nav .products .dropdown-menu {
   background: url(https://dummyimage.com/1200x400/eee/ddd) no-repeat;
   background-size: cover;
-}
-.product-detail .navbar-nav .products .dropdown-menu .arrow {
-  border-color: transparent transparent #eee transparent;
-  left: 45%;
 }
 .product-detail #header .phone {
   color: #A1A1A1;
