@@ -881,21 +881,14 @@ button.checkout {
   margin-left: -5px;
   font-size: 16px;
 }
-.content .featureds .furnitures .row {
-  margin-left: 0;
-  margin-right: 0;
-}
-.content .featureds .furnitures .box {
-  padding-left: 30px;
-}
-.content .featureds .furnitures .furniture {
+.content .featureds .furnitures .row > div {
   height: 210px;
+  padding-left: 30px;
   background-image: url(https://dummyimage.com/400x210/eee/222);
   background-size: cover;
 }
-.content .featureds .furnitures .furniture.recommend {
-  background-image: url(https://dummyimage.com/400x210/ccc/222);
-  background-size: cover;
+.content .featureds .furnitures .row .recommend {
+  background-image: url(https://dummyimage.com/400x210/ddd/222);
 }
 .content .featureds .furnitures .title {
   padding-top: 34px;
