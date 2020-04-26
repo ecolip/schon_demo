@@ -140,26 +140,6 @@ button.checkout {
   width: 18px;
   height: 18px;
 }
-.prev-next ul {
-  padding: 4px 6px;
-  background-color: #EDEDED;
-  border-radius: 30px;
-}
-.prev-next li a {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-  color: #939393;
-  text-decoration: none;
-}
-.prev-next li a:first-child {
-  padding-right: 2px;
-}
-.prev-next li a.active {
-  background-color: #fff;
-}
 .flows {
   padding-bottom: 140px;
 }
@@ -199,6 +179,11 @@ button.checkout {
   bottom: 0;
   font-size: 14px;
   border: 1px solid #EDEDED;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.add-menu:hover {
+  opacity: 1;
 }
 .add-menu a {
   font-size: 13px;
@@ -847,10 +832,10 @@ button.checkout {
   border-right: 1px solid #939393;
   border-left: 1px solid #939393;
 }
-.content .featureds .featured .box {
+.content .featureds .featured .owl-carousel .box {
   position: relative;
 }
-.content .featureds .featured .box .off-mark {
+.content .featureds .featured .owl-carousel .box .off-mark {
   position: absolute;
   top: 12%;
   padding: 5px 10px;
@@ -858,24 +843,24 @@ button.checkout {
   color: white;
   font-weight: 600;
 }
-.content .featureds .featured .package {
+.content .featureds .featured .owl-carousel .package {
   padding-left: 20px;
 }
-.content .featureds .featured .package .stars {
+.content .featureds .featured .owl-carousel .package .stars {
   line-height: 1.2;
 }
-.content .featureds .featured .package .title {
+.content .featureds .featured .owl-carousel .package .title {
   padding-top: 5px;
   padding-bottom: 6px;
   font-size: 16px;
   font-weight: 600;
   color: #757575;
 }
-.content .featureds .featured .package .price {
+.content .featureds .featured .owl-carousel .package .price {
   font-size: 20px;
   font-weight: 700;
 }
-.content .featureds .featured .package .price .icon-euro {
+.content .featureds .featured .owl-carousel .package .price .icon-euro {
   margin-left: -5px;
   font-size: 16px;
 }
@@ -911,27 +896,30 @@ button.checkout {
   font-weight: 800;
   letter-spacing: 1px;
 }
-.content .best-sellers .best-seller .box {
+.content .best-sellers .owl-carousel {
+  position: static;
+}
+.content .best-sellers .owl-carousel .box {
   position: relative;
 }
-.content .best-sellers .best-seller .box .stars {
+.content .best-sellers .owl-carousel .box .stars {
   position: absolute;
   bottom: 8px;
 }
-.content .best-sellers .best-seller .box .mark-new {
+.content .best-sellers .owl-carousel .box .mark-new {
   position: absolute;
   left: 0;
   padding: 2px 10px 3px 10px;
   font-size: 14px;
   background-color: black;
 }
-.content .best-sellers .best-seller .box .mark-new.puff {
+.content .best-sellers .owl-carousel .box .mark-new.puff {
   top: 10%;
 }
-.content .best-sellers .best-seller .box .mark-new.bombi {
+.content .best-sellers .owl-carousel .box .mark-new.bombi {
   top: 25%;
 }
-.content .best-sellers .best-seller .box .mark-off {
+.content .best-sellers .owl-carousel .box .mark-off {
   position: absolute;
   left: 0;
   top: 13.5%;
@@ -940,29 +928,34 @@ button.checkout {
   font-size: 13px;
   font-weight: 700;
 }
-.content .best-sellers .best-seller .box .eye-menu-out {
+.content .best-sellers .owl-carousel .box .eye-menu-out {
   position: absolute;
   bottom: 15px;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
-.content .best-sellers .best-seller .box .eye-menu-out .eye-menu {
+.content .best-sellers .owl-carousel .box .eye-menu-out:hover {
+  opacity: 1;
+}
+.content .best-sellers .owl-carousel .box .eye-menu-out .eye-menu {
   border: 2px solid #ECECEC;
 }
-.content .best-sellers .best-seller .box .eye-menu-out .eye-menu a {
+.content .best-sellers .owl-carousel .box .eye-menu-out .eye-menu a {
   width: 44px;
   height: 44px;
   line-height: 44px;
   color: #838182;
 }
-.content .best-sellers .best-seller .box .eye-menu-out .eye-menu span {
+.content .best-sellers .owl-carousel .box .eye-menu-out .eye-menu span {
   font-size: 15px;
   color: #A1A1A1;
 }
-.content .best-sellers .best-seller .package .title {
+.content .best-sellers .owl-carousel .package .title {
   font-size: 13px;
   font-weight: 700;
   color: #535353;
 }
-.content .best-sellers .best-seller .package .price {
+.content .best-sellers .owl-carousel .package .price {
   font-size: 15px;
   font-weight: 700;
 }
@@ -1295,62 +1288,49 @@ button.checkout {
   margin-bottom: 150px;
 }
 .abouts .content .workspace .owl-carousel {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
 }
-.abouts .content .workspace .owl-carousel .owl-item img {
-  display: inline-block;
+.abouts .content .workspace .owl-carousel .level-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-.abouts .content .workspace .img-left,
-.abouts .content .workspace .img-right {
-  display: inline-block;
-  width: 400px;
-  height: 542px;
+.abouts .content .workspace .owl-carousel .upper {
+  display: flex;
+  flex-direction: row;
 }
-.abouts .content .workspace .img-right {
-  right: 0;
+.abouts .content .workspace .owl-carousel .upper > div:first-child {
+  margin-right: 20px;
 }
-.abouts .content .workspace .owl-prev,
-.abouts .content .workspace .owl-next {
+.abouts .content .workspace .owl-carousel .owl-prev,
+.abouts .content .workspace .owl-carousel .owl-next {
   position: absolute;
   top: 50%;
-  font-size: 100px;
-  color: #A1A1A1;
   transform: translateY(-50%);
+  font-size: 50px;
+  color: #A1A1A1;
 }
-.abouts .content .workspace .owl-prev {
+.abouts .content .workspace .owl-carousel .owl-prev {
   left: 50px;
 }
-.abouts .content .workspace .owl-next {
+.abouts .content .workspace .owl-carousel .owl-next {
   right: 50px;
 }
-.abouts .content .workspace .owl-dots {
-  padding-top: 25px;
-  text-align: center;
+.abouts .content .workspace .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.abouts .content .workspace .owl-dot {
+.abouts .content .workspace .owl-carousel .owl-dot {
   width: 90px;
   height: 3px;
-  margin-right: 10px;
-  background: #E0E0E0;
+  margin-right: 5px;
+  background: #EDEDED;
 }
-.abouts .content .workspace .owl-dot.active {
-  background: #A1A1A1;
-}
-.abouts .content .workspace .img-1 {
-  width: 542px;
-}
-.abouts .content .workspace .img-2 {
-  width: 240px;
-  height: 308px;
-}
-.abouts .content .workspace .img-3 {
-  width: 384px;
-  height: 308px;
-}
-.abouts .content .workspace .img-4 {
-  width: 640px;
-  height: 220px;
+.abouts .content .workspace .owl-carousel .owl-dot.active {
+  background: #C0C0C0;
 }
 .abouts #footer .signs .subtitle {
   padding-top: 23px;

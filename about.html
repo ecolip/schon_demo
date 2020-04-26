@@ -48,7 +48,7 @@
 					<li class="nav-item li-1 px-2">
 						<a class="nav-link" href="#">HOME</a>
 					</li>
-					<li class="nav-item li-1 products bg-item px-2 ml-2">
+					<li class="nav-item li-1 products px-2 ml-2 bg-item">
 						<a class="nav-link position-relative" href="#">
 							PRODUCTS<i class="icon-down-open"></i>
 							<span class="arrow position-absolute"></span>
@@ -181,7 +181,7 @@
 							<i class="icon-shopping-bag"></i>
 							<span class="buy-nb d-inline-block position-absolute text-center text-white">3</span>
 						</a>
-						<div class="dropdown-menu bg-white px-4 py-5">
+						<div class="dropdown-menu border-0 bg-white px-4 py-5">
 							<div class="px-3">
 								<div class="media pt-1 pb-3">
 									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
@@ -334,20 +334,47 @@
 			</div>
 		</div>
 
-		<div class=" workspace">
+		<div class="workspace">
 			<div class="container">
 				<div class="title pb-4 mb-2">OUR WORKSPACE</div>
 			</div>
-			<!-- <img src="http://placeimg.com/500/542/nature" alt="" class="img-left position-absolute">
-			<img src="http://placeimg.com/500/542/nature" alt="" class="img-right position-absolute"> -->
+
 			<div class="owl-carousel">
-				<div class="item">
-					<img src="https://dummyimage.com/300x300/eee/666" class="img-1" alt="...">
+				<div class="item level-1">
+					<img src="https://dummyimage.com/542x542/eee/666" alt="...">
 				</div>
-				<div class="item">
-					<img src="https://dummyimage.com/300x300/eee/666" class="img-2" alt="...">
-					<img src="https://dummyimage.com/300x300/eee/666" class="img-3" alt="...">
-					<img src="https://dummyimage.com/300x300/eee/666" class="img-4" alt="...">
+				<div class="item level-1">
+					<div class="upper">
+						<div><img src="https://dummyimage.com/240x308/eee/666" class="img-2" alt=""></div>
+						<div><img src="https://dummyimage.com/384x308/eee/666" class="img-3" alt=""></div>
+					</div>
+					<div class="bottom">
+						<img src="https://dummyimage.com/640x315/eee/666" class="img-4" alt="">
+					</div>
+				</div>
+				<div class="item level-1">
+					<img src="https://dummyimage.com/300x300/eee/666" alt="...">
+				</div>
+				<div class="item level-1">
+					<div class="upper">
+						<div><img src="https://dummyimage.com/240x308/eee/666" class="img-2" alt=""></div>
+						<div><img src="https://dummyimage.com/384x308/eee/666" class="img-3" alt=""></div>
+					</div>
+					<div class="bottom">
+						<img src="https://dummyimage.com/640x315/eee/666" class="img-4" alt="">
+					</div>
+				</div>
+				<div class="item level-1">
+					<img src="https://dummyimage.com/300x300/eee/666" alt="...">
+				</div>
+				<div class="item level-1">
+					<div class="upper">
+						<div><img src="https://dummyimage.com/240x308/eee/666" class="img-2" alt=""></div>
+						<div><img src="https://dummyimage.com/384x308/eee/666" class="img-3" alt=""></div>
+					</div>
+					<div class="bottom">
+						<img src="https://dummyimage.com/640x315/eee/666" class="img-4" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -474,18 +501,27 @@
 	<div class="view-container"></div>
 
 	<script>
-		$(document).ready(function(){
-			$(".owl-carousel").owlCarousel({
+		$(document).ready(function () {
+			$(".workspace .owl-carousel").owlCarousel({
 				items: 2, /* you want to see on the screen*/
+				margin: 20,
 				loop: true,	/*Infinity loop*/
 				nav: true,   /*控制列*/
-				dots:true,	/*下方點*/
+				dots: true,	/*下方點*/
 				autoplay: true, /**/
 				autoplayTimeout: 3000, /* 輪播速度*/
+				stagePadding: 120,
+				responsive:{
+					0:{
+						item:1,
+					},
+					992:{
+						item:2,
+					}
+				}
 			})
 		});
 	</script>
 </body>
 
 </html>
-

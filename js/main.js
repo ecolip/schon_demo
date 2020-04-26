@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 		$('.view-container').click(function(e){
 			$(this).fadeOut();
+			$('.li-1 .arrow').fadeOut();
 			$('.dropdown-menu').fadeOut();
-			$('.bg-item .arrow').fadeOut();
 		});
 	});
 
@@ -20,8 +20,9 @@ $(document).ready(function(){
 		$(this).children('.dropdown-menu').toggleClass('active');
 	});
 	$('.icon-cancel-2').click(function(e){
-		$(this).parents('.dropdown-menu').removeClass('active');
+		$(this).siblings('.dropdown-menu').removeClass('active');
 	});
+
 
 	//language choice
 	// $('.language').click(function(){
