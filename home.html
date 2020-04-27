@@ -176,7 +176,10 @@
 											<i class="icon-search"></i>
 										</span>
 									</div>
-									<i class="icon-cancel-2"></i>
+									<div class="delete-btn d-inline-block p-2">
+										<i class="icon-cancel-2"></i>
+									</div>
+									
 								</div>
 							</li>
 							<li class="nav-item li-1 dropdown bags mr-2 bg-item">
@@ -254,7 +257,7 @@
 		<div class="sales-off px-xl-0">
 			<div class="container">
 				<div class="row">
-					<div class="mb-4 col-xl-6 ">
+					<div class="mb-4 mb-xl-0 col-xl-6">
 						<div class="furniture text-white">
 							<div class="">
 								<div class="title d-inline-block px-2 py-1">FURNITURE DESSIGNS IDEAS</div>
@@ -268,7 +271,7 @@
 					</div>
 					<div class="col-xl-6">
 						<div class="row">
-							<div class="mb-4 col-md-6">
+							<div class="mb-4 mb-md-0 col-md-6">
 								<div class="sofas">
 									<div class="title">SOFAS &amp; ARMCHAIRS</div>
 									<div class="subtitle">3 Seater Leather<br />Sofa</div>
@@ -321,7 +324,7 @@
 			</div>
 		</div>
 
-		<div class="categories mb-4">
+		<div class="categories">
 			<div class="container">
 				<div class="row">
 					<div class="mb-4 mb-lg-0 col-lg-4">
@@ -401,9 +404,9 @@
 			</div>
 		</div>
 
-		<div class="featureds pb-5 mb-1">
-			<div class="container">
-				<div class="infos text-center d-sm-flex justify-content-between align-items-center">
+		<div class="featureds pb-4 mb-3">
+			<div class="container position-relative">
+				<div class="infos text-center d-sm-flex justify-content-between align-items-center py-4">
 					<div class="tab pb-2 pb-sm-0">
 						<ul class="list-unstyled">
 							<li class="d-inline-block"><a class="active" href="#">FEATURED</a></li>
@@ -468,6 +471,19 @@
 								<div class="price"><i class="icon-euro"></i> 399,00</div>
 							</div>
 						</div>
+						<div class="item">
+							<img src="https://dummyimage.com/275x275/eee/222" class="w-100" alt="">
+							<div class="package">
+								<div class="stars pl-1">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-empty"></i>
+								</div>
+								<div class="title">Bombi Chair</div>
+								<div class="price"><i class="icon-euro"></i> 399,00</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -517,10 +533,10 @@
 			</div>
 		</div>
 
-		<div class="best-sellers pt-2 pb-5 mb-4">
+		<div class="best-sellers pb-5 mb-4">
 			<div class="container position-relative">
-				<div class="infos clearfix">
-					<div class="title float-left">BEST SLLER</div>
+				<div class="infos py-4">
+					<div class="title">BEST SLLER</div>
 				</div>
 
 				<div class="owl-carousel featured-type-nav">
@@ -604,6 +620,23 @@
 						<div class="package pl-3">
 							<div class="title pt-3 nostar">Bombi Chair</div>
 							<div class="price"><i class="icon-euro"></i> 200,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="stars pl-3 ml-1">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star-empty"></i>
+							</div>
+							<div class="mark-new puff d-inline-block text-white bg-black">NEW</div>
+						</div>
+
+						<div class="package pl-3">
+							<div class="title pt-3">Puff Chair</div>
+							<div class="price"><i class="icon-euro"></i> 287,00</div>
 						</div>
 					</div>
 				</div>
@@ -787,29 +820,30 @@
 	<script>
 		$(document).ready(function () {
 			$('.featureds .owl-carousel').owlCarousel({
+				items: 4,
 				margin: 32,
-				nav: true,
+				nav:true,
 				loop: true,	/*Infinity loop*/
 				autoplay: true,
 				autoplayTimeout: 3000, /* 輪播速度*/
 				responsive: {
 					0: {
 						items: 1,
+						nav:false,
 					},
 					576: {
 						items: 2,
-					},
-					768: {
-						items: 3,
+						nav:true,
 					},
 					1200: {
-						items: 5,
+						items: 4,
 					},
 				}
 			});
 		});
 		$(document).ready(function () {
 			$('.best-sellers .owl-carousel').owlCarousel({
+				items: 5,
 				margin: 32,
 				nav: true,   /*控制列*/
 				loop: true,	/*Infinity loop*/

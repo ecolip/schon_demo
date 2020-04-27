@@ -19,21 +19,14 @@ $(document).ready(function(){
 	$('.li-1.searchs').click(function(e){
 		$(this).children('.dropdown-menu').toggleClass('active');
 	});
-	$('.icon-cancel-2').click(function(e){
-		$(this).siblings('.dropdown-menu').removeClass('active');
+	$('.searchs .delete-btn').click(function(e){
+		$(this).closest('.dropdown-menu').removeClass('active');
 	});
 
 
 	//language choice
 	// $('.language').click(function(){
 	// 	$('.language-menu').toggleClass('active');
-	// });
-
-	//home-> featureeds prev-next
-	// $('.prev-next a').click(function(e){
-	// 	e.preventDefault();
-	// 	$('a').removeClass('active');
-	// 	$(this).addClass('active');
 	// });
 
 	//product-> detail

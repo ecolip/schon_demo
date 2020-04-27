@@ -108,6 +108,27 @@ button.checkout {
   font-weight: 700;
   color: #313131;
 }
+.owl-carousel.featured-type-nav .owl-nav {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  padding: 6px;
+  background: #F1F1F1;
+  border-radius: 20px;
+}
+.owl-carousel.featured-type-nav .owl-nav button {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #A1A1A1;
+  background: white;
+  outline: none;
+}
+.owl-carousel.featured-type-nav .owl-nav .owl-prev {
+  margin-right: 3px;
+}
 .page-title {
   margin-bottom: 80px;
   background-color: #F3F3F3;
@@ -437,7 +458,7 @@ button.checkout {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .free-shipping i {
@@ -804,9 +825,6 @@ button.checkout {
   border: 2px solid #939393;
   background-color: transparent;
 }
-.content .featureds .infos {
-  margin-bottom: 20px;
-}
 .content .featureds .infos .tab li {
   line-height: 1;
 }
@@ -831,6 +849,9 @@ button.checkout {
   padding: 0 30px;
   border-right: 1px solid #939393;
   border-left: 1px solid #939393;
+}
+.content .featureds .featured .owl-carousel {
+  position: static;
 }
 .content .featureds .featured .owl-carousel .box {
   position: relative;
@@ -887,9 +908,6 @@ button.checkout {
   font-weight: 700;
   letter-spacing: 2px;
   color: #535353;
-}
-.content .best-sellers .infos {
-  margin-bottom: 22px;
 }
 .content .best-sellers .infos .title {
   font-size: 26px;
@@ -958,6 +976,9 @@ button.checkout {
 .content .best-sellers .owl-carousel .package .price {
   font-size: 15px;
   font-weight: 700;
+}
+.content .best-sellers .owl-carousel.featured-type-nav .owl-nav {
+  top: 22px;
 }
 .content .brands .infos {
   padding-bottom: 36px;
@@ -1287,21 +1308,25 @@ button.checkout {
 .abouts .content .workspace {
   margin-bottom: 150px;
 }
-.abouts .content .workspace .owl-carousel {
+.abouts .content .workspace .owl-carousel .owl-stage {
   display: flex;
 }
 .abouts .content .workspace .owl-carousel .level-1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
+  justify-content: space-between;
 }
 .abouts .content .workspace .owl-carousel .upper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .abouts .content .workspace .owl-carousel .upper > div:first-child {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.abouts .content .workspace .owl-carousel .upper > div:last-child {
+  margin-left: 10px;
 }
 .abouts .content .workspace .owl-carousel .owl-prev,
 .abouts .content .workspace .owl-carousel .owl-next {
@@ -1310,6 +1335,7 @@ button.checkout {
   transform: translateY(-50%);
   font-size: 50px;
   color: #A1A1A1;
+  outline: none;
 }
 .abouts .content .workspace .owl-carousel .owl-prev {
   left: 50px;

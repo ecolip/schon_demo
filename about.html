@@ -503,20 +503,23 @@
 	<script>
 		$(document).ready(function () {
 			$(".workspace .owl-carousel").owlCarousel({
-				items: 2, /* you want to see on the screen*/
+				slideBy: 2,
 				margin: 20,
-				loop: true,	/*Infinity loop*/
-				nav: true,   /*控制列*/
+				nav: true,  /*控制列*/
 				dots: true,	/*下方點*/
-				autoplay: true, /**/
+				loop: true,	/*Infinity loop*/
+				autoplay: true, 
 				autoplayTimeout: 3000, /* 輪播速度*/
 				stagePadding: 120,
 				responsive:{
 					0:{
-						item:1,
+						items:1,
+						nav: false,  
+						dots: false,
 					},
 					992:{
-						item:2,
+						items:2,
+						slideBy: 2,
 					}
 				}
 			})
