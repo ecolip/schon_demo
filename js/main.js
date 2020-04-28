@@ -1,27 +1,20 @@
 $(document).ready(function(){
 	//nav bag
-	$('.li-1').click(function(e){
+	$('.nav-item.li-1').click(function(e){
 		var isbgMenu = $(e.currentTarget).is('.bg-item');
 
 		if(isbgMenu){
-			$(this).find('.dropdown-menu').fadeIn();
-			$(this).find('.arrow').fadeIn();
-			$('.view-container').fadeIn();
+			$(this).find('.dropdown-menu').toggleClass('active');
+			$(this).find('.arrow').toggleClass('active');
+			$('body').toggleClass('active');
 		}	
-
-		$('.view-container').click(function(e){
-			$(this).fadeOut();
-			$('.li-1 .arrow').fadeOut();
-			$('.dropdown-menu').fadeOut();
-		});
 	});
 
-	$('.li-1.searchs').click(function(e){
+	$('.nav-item.searchs').click(function(e){
 		$(this).children('.dropdown-menu').toggleClass('active');
 	});
-	$('.searchs .delete-btn').click(function(e){
-		$(this).closest('.dropdown-menu').removeClass('active');
-	});
+	
+	
 
 
 	//language choice
