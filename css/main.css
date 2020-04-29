@@ -1619,8 +1619,8 @@ button.checkout {
 }
 .blog-full-width .content .ideas .dates {
   position: absolute;
-  top: 38px;
-  left: 61px;
+  top: 10%;
+  left: 5%;
   width: 78px;
   height: 78px;
 }
@@ -1635,8 +1635,8 @@ button.checkout {
 }
 .blog-full-width .content .ideas .chart {
   position: absolute;
-  top: 56px;
-  right: 53px;
+  top: 15%;
+  right: 6%;
   font-weight: 600;
   color: #838182;
 }
@@ -1768,6 +1768,9 @@ button.checkout {
 @media (min-width: 768px) {
   .blog-full-width .content .ideas .describs {
     top: -50px;
+  }
+  .blog-full-width .content .ideas .chart {
+    top: 12%;
   }
   .blog-full-width .content .ideas .card-columns {
     column-count: 2;
