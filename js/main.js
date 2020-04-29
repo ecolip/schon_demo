@@ -1,18 +1,23 @@
 $(document).ready(function(){
-	//nav bag
-	$('.nav-item.li-1').click(function(e){
+	//navigation
+	$('.nav-item .nav-link').click(function(e){
 		var isbgMenu = $(e.currentTarget).is('.bg-item');
 
 		if(isbgMenu){
-			$(this).find('.dropdown-menu').toggleClass('active');
+			$(this).siblings('.dropdown-menu').toggleClass('active');
 			$(this).find('.arrow').toggleClass('active');
 			$('body').toggleClass('active');
 		}	
+		else{
+			$(this).siblings('.dropdown-menu').toggleClass('active');
+		}
+
+		$('.searchs .delete-btn').click(function(e){
+			$(this).closest('.dropdown-menu').removeClass('active');
+		});
 	});
 
-	$('.nav-item.searchs').click(function(e){
-		$(this).children('.dropdown-menu').toggleClass('active');
-	});
+	
 	
 	
 
