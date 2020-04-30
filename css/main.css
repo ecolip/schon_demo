@@ -167,6 +167,40 @@ button.checkout {
   padding-bottom: 50px;
   color: #2C3E66;
 }
+.navbar-nav .products .sofas,
+.navbar-nav .products .totem {
+  height: 109px;
+  background-image: url(http://placeimg.com/502/109/nature);
+  background-size: cover;
+}
+.navbar-nav .products .sofas .title {
+  padding-top: 20px;
+  padding-left: 32px;
+  font-size: 30px;
+  letter-spacing: 32px;
+  color: #494949;
+}
+.navbar-nav .products .sofas .subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #494949;
+  letter-spacing: 1px;
+}
+.navbar-nav .products .totem {
+  padding-right: 30px;
+}
+.navbar-nav .products .totem .title {
+  padding-top: 25px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #494949;
+}
+.navbar-nav .products .totem .subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #838182;
+}
 .navbar-nav .bags .dropdown-menu {
   width: 380px;
   right: -70%;
@@ -1184,40 +1218,6 @@ button.checkout {
   }
 }
 /*about us*/
-.abouts .navbar-nav .products .dropdown-menu .sofas,
-.abouts .navbar-nav .products .dropdown-menu .totem {
-  height: 109px;
-  background-image: url(http://placeimg.com/502/109/nature);
-  background-size: cover;
-}
-.abouts .navbar-nav .products .dropdown-menu .sofas .title {
-  padding-top: 20px;
-  padding-left: 32px;
-  font-size: 30px;
-  letter-spacing: 32px;
-  color: #494949;
-}
-.abouts .navbar-nav .products .dropdown-menu .sofas .subtitle {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1;
-  color: #494949;
-  letter-spacing: 1px;
-}
-.abouts .navbar-nav .products .dropdown-menu .totem {
-  padding-right: 30px;
-}
-.abouts .navbar-nav .products .dropdown-menu .totem .title {
-  padding-top: 25px;
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: #494949;
-}
-.abouts .navbar-nav .products .dropdown-menu .totem .subtitle {
-  font-size: 15px;
-  font-weight: 600;
-  color: #838182;
-}
 .abouts .content .page-title .title {
   padding-top: 60px;
   letter-spacing: 1px;
@@ -1579,10 +1579,11 @@ button.checkout {
   width: 64px;
   height: 64px;
 }
-.blog-sidebar .content .sidebar .popular .media-body {
+.blog-sidebar .content .sidebar .popular a .media-body {
   font-size: 13px;
+  color: #535353;
 }
-.blog-sidebar .content .sidebar .popular .media-body .date {
+.blog-sidebar .content .sidebar .popular a .media-body .date {
   font-size: 12px;
   font-weight: 600;
   color: #535353;
@@ -1619,8 +1620,8 @@ button.checkout {
 }
 .blog-full-width .content .ideas .dates {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 5%;
+  left: 3%;
   width: 78px;
   height: 78px;
 }
@@ -1642,7 +1643,6 @@ button.checkout {
 }
 .blog-full-width .content .ideas .describs {
   top: -30px;
-  margin: 0 70px 0 40px;
 }
 .blog-full-width .content .ideas .describ {
   background-color: white;
@@ -1768,6 +1768,7 @@ button.checkout {
 @media (min-width: 768px) {
   .blog-full-width .content .ideas .describs {
     top: -50px;
+    margin: 0 70px 0 40px;
   }
   .blog-full-width .content .ideas .chart {
     top: 12%;
@@ -1783,13 +1784,6 @@ button.checkout {
   .blog-full-width .content .ideas .card-columns {
     column-count: 3;
   }
-}
-.product-detail .navbar-nav .products .arrow {
-  top: 135%;
-}
-.product-detail .navbar-nav .products .dropdown-menu {
-  background: url(https://dummyimage.com/1200x400/eee/ddd) no-repeat;
-  background-size: cover;
 }
 .product-detail #header .phone {
   color: #A1A1A1;
@@ -1873,7 +1867,7 @@ button.checkout {
   border-radius: 20px;
 }
 .product-detail .content .choice-info {
-  padding: 20px 0 85px 0;
+  padding: 20px 0 60px 0;
 }
 .product-detail .content .choice-info .tab li {
   margin-right: 60px;
