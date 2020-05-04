@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Product-detail</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+</head>
+
+<body class="product-detail">
+	<div id="header" class="full-width bg-transparent px-5 py-4 mt-2 mb-3">
+		<nav class="navbar navbar-expand-xl navbar-light m-0 p-0">
+			<div class="box d-flex mr-auto">
+				<a class="navbar-brand p-0 mr-4" href="#">
+					<img src="image/logo.png" alt="logo">
+				</a>
+				<a class="phone d-none d-xl-flex align-items-end text-decoration-none"
+					href="tel:+1-555-333-22-11">+1&nbsp; (555)&nbsp;
+					333&nbsp; 22&nbsp; 11</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item li-1 px-xl-2">
+						<a class="nav-link" href="#">HOME</a>
+					</li>
+					<li class="nav-item li-1 products px-xl-2 ml-xl-2">
+						<a class="nav-link bg-item position-relative" href="#">
+							PRODUCTS<i class="icon-down-open"></i>
+							<span class="arrow position-absolute"></span>
+						</a>
+						<div class="dropdown-menu border-0">
+							<div class="pb-5">
+								<div class="row">
+									<div class="pb-4 col-sm-6 col-xl-3">
+										<div class="title">SOFAS & ARMCHAIRS</div>
+										<hr>
+										<ul class="list-unstyled">
+											<li><a href="#">Sofas</a></li>
+											<li><a href="#">Armchairs</a></li>
+											<li><a href="#">Poufs</a></li>
+											<li><a href="#">Footstools</a></li>
+											<li><a href="#">Lounge Chairs</a></li>
+										</ul>
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-2">
+										<div class="title">TABLES & CHAIRS</div>
+										<hr>
+										<ul class="list-unstyled">
+											<li><a href="#">Chairs</a></li>
+											<li><a href="#">Stools</a></li>
+											<li><a href="#">Benches</a></li>
+											<li><a href="#">Coffe Tables</a></li>
+											<li><a href="#">Console Tables</a></li>
+											<li><a href="#">Secretary Desks</a></li>
+										</ul>
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-3">
+										<div class="pl-xl-5">
+											<div class="title">KITCHEN FURNITURE</div>
+											<hr>
+											<ul class="list-unstyled">
+												<li><a href="#">Kitchen Taps</a></li>
+												<li><a href="#">Breakfast time</a></li>
+												<li><a href="#">Cooking</a></li>
+												<li><a href="#">Food Storage Boxes</a></li>
+												<li><a href="#">Spice Jars</a></li>
+												<li><a href="#">Napskins</a></li>
+												<li><a href="#">Oven Gloves</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="pb-4 order-1 col-sm-6 col-xl-2">
+										<div class="pl-xl-4">
+											<div class="title">OFFICE</div>
+											<hr class="sm">
+											<ul class="list-unstyled">
+												<li><a href="#">Office Desks</a></li>
+												<li><a href="#">Meeting Tables</a></li>
+												<li><a href="#">Task Chairs</a></li>
+											</ul>
+										</div>
+
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-2 order-xl-2">
+										<div class="pl-xl-3">
+											<div class="title">LIGHTING</div>
+											<hr class="sm">
+											<ul class="list-unstyled">
+												<li><a href="#">Fllor Lamps</a></li>
+												<li><a href="#">Wall Lamps</a></li>
+												<li><a href="#">Celling Lamps</a></li>
+												<li><a href="#">Table Lamps</a></li>
+												<li><a href="#">Spotlights</a></li>
+												<li><a href="#">Light Letter</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="pb-4 pb-md-0 col-md-6">
+									<div class="sofas text-center">
+										<div class="title">SOFAS</div>
+										<div class="subtitle">50% OFF</div>
+									</div>
+								</div>
+								<div class="pb-4 pb-md-0 col-md-6">
+									<div class="totem text-right">
+										<div class="title">TOTEM FLOOR LAMP</div>
+										<div class="subtitle">SHOP NOW</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-xl-2">
+						<a class="nav-link" href="#">PAGES<i class="icon-down-open"></i></a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-x-2 dropdown">
+						<a class="nav-link" href="#">BLOG</a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-xl-2 dropdown">
+						<a class="nav-link" href="#">ABOUT</a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 mx-xl-3">
+						<a class="nav-link" href="#">CONTACT</a>
+					</li>
+					<li class="nav-item li-1 searchs mx-xl-2">
+						<a class="nav-link" href="#"><i class="icon-search"></i></a>
+						<div class="dropdown-menu text-center">
+							<div class="input-container d-flex justify-content-center align-items-center">
+								<input type="text" class="bg-transparent pl-4" placeholder="Search">
+								<span>
+									<i class="icon-mic-outline"></i>
+									<i class="icon-search"></i>
+								</span>
+							</div>
+							<div class="delete-btn d-inline-block p-2">
+								<i class="icon-cancel-2"></i>
+							</div>
+
+						</div>
+					</li>
+					<li class="nav-item li-1">
+						<a class="nav-link" href="#"><i class="icon-heart"></i></a>
+					</li>
+					<li class="nav-item li-1 dropdown bags">
+						<a class="nav-link bg-item" href="#">
+							<i class="icon-shopping-bag position-relative">
+								<span class="buy-nb d-inline-block position-absolute text-center text-white">3</span>
+							</i>
+						</a>
+						<div class="dropdown-menu border-0 bg-white px-4 py-5">
+							<div class="px-3">
+								<div class="media pt-1 pb-3">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+								<div class="media pb-3">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+								<div class="media">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+
+								<hr>
+								<div class="d-flex justify-content-between py-1">
+									<span class="total">Sub Total</span><span class="price icon-euro">799,00</span>
+								</div>
+								<hr>
+								<div class="d-flex">
+									<button type="submit" class="view-btn btn flex-fill mr-4">VIEW
+										CART</button>
+									<button type="submit" class="check-btn btn flex-fill text-white">CHECKOUT</button>
+								</div>
+							</div>
+							<span class="arrow position-absolute"></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="content">
+		<div class="product-sale pb-5 mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6">
+						<div class="chart py-4 my-2">
+							<i class="icon-heart-1"></i><span>27</span>
+							<i class="icon-chat-1"></i><span>12</span>
+							<i class="icon-share"></i><span>14</span>
+						</div>
+						<div class="product-sm-list px-3 mx-3">
+							<div class="list-img pb-3">
+								<img src="https://dummyimage.com/510x510/fff/666" class="active mb-3" alt="products">
+								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
+								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
+								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
+								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
+								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
+							</div>
+							<div class="owl-carousel owl-theme">
+								<img src="https://dummyimage.com/105x105/fff/666" alt="product">
+								<img src="https://dummyimage.com/105x105/fff/222" alt="product">
+								<img src="https://dummyimage.com/105x105/fff/666" alt="product">
+								<img src="https://dummyimage.com/105x105/fff/222" alt="product">
+								<img src="https://dummyimage.com/105x105/fff/666" alt="product">
+								<img src="https://dummyimage.com/105x105/fff/222" alt="product">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-xl-6">
+						<div class="box pl-4 ml-3">
+							<div class="breadcrumbs pt-4 mt-2">
+								<a href="#" class="text-decoration-none">Chairs</a>
+								<i class="icon-right-open"></i>
+								<a href="#" class="text-decoration-none">Products</a>
+							</div>
+							<div class="title pb-2">KAILA FABRIC CHAIR</div>
+							<div class="stars pb-4 mb-2 ml-1">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star-empty"></i>
+								<span>Reviews(12)</span>
+							</div>
+							<div class="chart compare pb-3">
+								<i class="icon-share pr-2"></i><span class="mr-3">SHARE</span>
+								<i class="icon-exchange-1 pr-2"></i><span class="mr-3">COMPARE</span>
+								<i class="icon-heart-1 pr-2"></i><span>ADD TO WISHLIST</span>
+							</div>
+							<hr class="pb-2">
+
+							<p class="pr-5 pb-4 mr-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eum
+								eveniet
+								voluptas. Harum nemo consequatur repellendus iusto quis dolor doloribus ipsum voluptatum
+								fugit fuga adipisci omnis nesciunt aliquam, facilis,eaque id. Sequi?</p>
+
+							<p class="pr-5 pb-4 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+								vitae iure non quisquam perferendis ullam necessitatibus dolorum magni beatae, neque
+								eaque
+								esse corrupti odit earum nam quidem ratione voluptatem. Corporis beatae maiores fugiat
+								sunt
+								accusantium, sint molestiae cupiditate quasi praesentium delectus nam dicta eum commodi,
+								saepe magnam modi consequatur, officia tempora amet!</p>
+							<hr>
+
+							<div class="price pt-2 pb-1 mb-4">$ 79.00 <span class="pl-2">399,00</span>
+							</div>
+
+							<div class="qty">
+								<form action="">
+									<div class="form-row align-items-center">
+										<div class="col-auto my-1">QTY:</div>
+										<div class="col-auto my-1 ml-3">
+											<select class="custom-select mr-sm-2 border-0 pl-4"
+												id="inlineFormCustomSelect">
+												<option selected>1</option>
+												<option value="1">2</option>
+												<option value="2">3</option>
+												<option value="3">4</option>
+											</select>
+										</div>
+										<div class="col-auto my-1">
+											<button type="submit" class="btn">ADD TO CART</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="choice-info">
+			<div class="container">
+				<ul class="tab list-unstyled text-center d-md-flex justify-content-center">
+					<li class="pb-2 active">DESCRIPTION</li>
+					<li class="pb-2">INFORMATION</li>
+					<li class="pb-2">REVIEWS (12)</li>
+				</ul>
+
+				<hr class="m-0">
+				<div class="tab-contents">
+					<div class="tab-content active">
+						<p class="pt-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolorem
+							voluptatem modi fugiat mollitia quod maxime quaerat repudiandae, provident veniam architecto
+							recusandae, aspernatur cumque quidem.</p>
+
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
+							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
+							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
+							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
+							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.<br>H830 x L585 x P 540 mm</p>
+					</div>
+					<div class="tab-content">
+						<p class="pt-4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis
+							officiis, mollitia explicabo dolorum aspernatur, perspiciatis labore temporibus alias
+							molestiae ratione saepe quia quasi earum.</p>
+
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
+							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
+							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
+							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
+							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.<br>H830 x L585 x P 540 mm</p>
+					</div>
+					<div class="tab-content">
+						<p class="pt-4 mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa repudiandae
+							illum
+							corporis adipisci nemo molestiae debitis dolore, blanditiis voluptas sint? Laudantium
+							possimus nam unde eum?</p>
+
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
+							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
+							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
+							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
+							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
+							elit.<br>H830 x L585 x P 540 mm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="best-sellers">
+			<div class="container position-relative">
+				<div class="infos py-4">
+					<div class="title">RELATED PRODUCTS</div>
+				</div>
+
+				<div class="owl-carousel">
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="stars pl-3 ml-1">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star-empty"></i>
+							</div>
+							<div class="mark-new puff d-inline-block text-white bg-black">NEW</div>
+						</div>
+
+						<div class="package pl-3">
+							<div class="title pt-3">Puff Chair</div>
+							<div class="price"><i class="icon-euro"></i> 287,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="add-menu d-flex bd-highlight bg-white w-100 text-center">
+								<div class="p-3 flex-fill bd-highlight">
+									<a href="#"><i class="icon-shopping-bag pr-1"></i>Add to Car</a>
+								</div>
+								<div class="px-2 py-3 flex-fill bd-highlight border-right border-left">
+									<a href="#"><i class=" icon-heart"></i></a>
+								</div>
+								<div class="px-2 py-3 flex-fill bd-highlight">
+									<a href="#"><i class="icon-exchange-1"></i></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="package pl-3">
+							<div class="title pt-3">Bombi Chair</div>
+							<div class="price"><i class="icon-euro"></i> 399,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<img src="https://dummyimage.com/213x213/eee/222" alt="">
+						<div class="package">
+							<div class="title pt-3">Wood Chair</div>
+							<div class="price"><i class="icon-euro"></i> 198,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="mark-off d-inline-block text-white">15% Off</div>
+							<div class="mark-new bombi d-inline-block text-white">NEW</div>
+						</div>
+
+						<div class="package pl-3">
+							<div class="title pt-3 nostar">Bombi Chair</div>
+							<div class="price"><i class="icon-euro"></i> 200,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="eye-menu-out text-center w-100">
+								<div class="eye-menu d-inline-block px-2 py-1 bg-white">
+									<div class="d-inline-block">
+										<a href="#" class="p-2 inline-block text-center"><i
+												class="icon-shopping-bag"></i></a>
+									</div>
+									<span>|</span>
+									<div class="d-inline-block">
+										<a href="#" class="p-2 inline-block text-center"><i class="icon-heart"></i></a>
+									</div>
+									<span>|</span>
+									<div class="d-inline-block">
+										<a href="#" class="p-2 inline-block text-center"><i class="icon-eye"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="package pl-3">
+							<div class="title pt-3 nostar">Bombi Chair</div>
+							<div class="price"><i class="icon-euro"></i> 200,00</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="box w-100">
+							<img src="https://dummyimage.com/213x213/eee/222" alt="">
+							<div class="stars pl-3 ml-1">
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star"></i>
+								<i class="icon-star-empty"></i>
+							</div>
+							<div class="mark-new puff d-inline-block text-white bg-black">NEW</div>
+						</div>
+
+						<div class="package pl-3">
+							<div class="title pt-3">Puff Chair</div>
+							<div class="price"><i class="icon-euro"></i> 287,00</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="info text-center text-xl-left">
+			<div class="container">
+				<div class="row">
+					<div class="pb-5 col-sm-6 col-xl-4">
+						<div class="logos">
+							<img src="image/logo_g.png" alt="logo">
+							<p>Exercitation ullamco laboris nisi ut aliquip ex commodo consequat.Duis aute irure
+							</p>
+							<div class="map pb-4">
+								<i class="icon-location"></i>
+								<span>
+									Connaugt Road Central Suite 18B,148 New Yankee
+								</span>
+							</div>
+							<div class="phone">
+								<i class="icon-phone-1 pr-1"></i>
+								<a href="tel:+1-555-333-22-11" class="text-decoration-none">+1 (555) 333 22 11</a>
+							</div>
+							<div class="email">
+								<i class="icon-mail pr-1"></i>
+								<a href="mailto:info@schon.chair" class="text-decoration-none">info@schon.chair</a>
+							</div>
+						</div>
+					</div>
+					<div class="pb-5 col-sm-6 col-xl-1">
+						<div class="category">
+							<div class="title">Categories</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">Chairs</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Sofa</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Living</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Bedroom</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Tables</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">New</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="pb-5 col-sm-6 col-xl-2">
+						<div class="information pl-xl-5">
+							<div class="title">Information</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">About Us</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Contact Us</a>
+								</li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Team&amp;Conditions</a>
+								</li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Privacy
+										Policy</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Customer
+										Service</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">FAQ<small>s</small></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pb-5 col-sm-6 col-xl-2">
+						<div class="account pl-xl-5">
+							<div class="title">Account</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">My Account</a>
+								</li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Order
+										Tracking</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Wish List</a>
+								</li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Shipping Cart</a>
+								</li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Checkout</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3 text-xl-right">
+						<div class="signs">
+							<div class="title sign">Sing Up Newslatter</div>
+							<p>
+								Subscribe now to get 15% off <br> on any product
+							</p>
+
+							<div
+								class="input-container d-flex justify-content-between align-content-center mx-auto ml-xl-auto mr-xl-0">
+								<input type="text" class="bg-transparent border-0 pl-3" placeholder="Your E-mail">
+								<a href="#"><i class="icon-angle-right"></i></a>
+							</div>
+
+							<div class="subtitle">Follow Us</div>
+							<div class="social-media">
+								<a href="#"><i class="icon-twitter"></i></a>
+								<a href="#"><i class="icon-facebook-1"></i></a>
+								<a href="#"><i class="icon-gplus"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+								<a href="#"><i class="icon-whatsapp"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom text-center">
+			<div class="container">
+				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+					<div class="copyright">&copy; <span>sch&Ouml;n.</span> -
+						All rights
+						Reserved
+					</div>
+					<div class="payment">
+						<i class="icon-cc-visa"></i>
+						<i class="icon-cc-mastercard"></i>
+						<i class="icon-cc-amex"></i>
+						<i class="icon-cc-paypal"></i>
+						<i class="icon-cc-stripe"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			$('.product-sale .owl-carousel').owlCarousel({
+				items: 4,
+				margin: 15,
+				nav: true,
+				// loop: true,	/*Infinity loop*/
+				// autoplay: true, /**/
+				// autoplayTimeout: 3000, /* 輪播速度*/
+			});
+		});
+		$(document).ready(function () {
+			$('.best-sellers .owl-carousel').owlCarousel({
+				items: 5,
+				margin: 32,
+				loop: true,	/*Infinity loop*/
+				autoplay: true,
+				autoplayTimeout: 3000, /* 輪播速度*/
+				responsive: {
+					0: {
+						items: 1,
+					},
+					576: {
+						items: 2,
+					},
+					768: {
+						items: 3,
+					},
+					1200: {
+						items: 5,
+					},
+				}
+			});
+		});
+
+	</script>
+</body>
+
+</html>

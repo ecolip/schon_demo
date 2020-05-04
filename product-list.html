@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Product-list</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+<body class="product-list">
+	<div id="header" class="full-width bg-transparent px-5 py-4 mt-2 mb-3">
+		<nav class="navbar navbar-expand-xl navbar-light m-0 p-0">
+			<div class="box d-flex mr-auto">
+				<a class="navbar-brand p-0 mr-4" href="#">
+					<img src="image/logo.png" alt="logo">
+				</a>
+				<a class="phone d-none d-xl-flex align-items-end text-decoration-none"
+					href="tel:+1-555-333-22-11">+1&nbsp; (555)&nbsp;
+					333&nbsp; 22&nbsp; 11</a>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item li-1 px-xl-2">
+						<a class="nav-link" href="#">HOME</a>
+					</li>
+					<li class="nav-item li-1 products px-xl-2 ml-xl-2">
+						<a class="nav-link bg-item position-relative" href="#">
+							PRODUCTS<i class="icon-down-open"></i>
+							<span class="arrow position-absolute"></span>
+						</a>
+						<div class="dropdown-menu border-0">
+							<div class="pb-5">
+								<div class="row">
+									<div class="pb-4 col-sm-6 col-xl-3">
+										<div class="title">SOFAS & ARMCHAIRS</div>
+										<hr>
+										<ul class="list-unstyled">
+											<li><a href="#">Sofas</a></li>
+											<li><a href="#">Armchairs</a></li>
+											<li><a href="#">Poufs</a></li>
+											<li><a href="#">Footstools</a></li>
+											<li><a href="#">Lounge Chairs</a></li>
+										</ul>
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-2">
+										<div class="title">TABLES & CHAIRS</div>
+										<hr>
+										<ul class="list-unstyled">
+											<li><a href="#">Chairs</a></li>
+											<li><a href="#">Stools</a></li>
+											<li><a href="#">Benches</a></li>
+											<li><a href="#">Coffe Tables</a></li>
+											<li><a href="#">Console Tables</a></li>
+											<li><a href="#">Secretary Desks</a></li>
+										</ul>
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-3">
+										<div class="pl-xl-5">
+											<div class="title">KITCHEN FURNITURE</div>
+											<hr>
+											<ul class="list-unstyled">
+												<li><a href="#">Kitchen Taps</a></li>
+												<li><a href="#">Breakfast time</a></li>
+												<li><a href="#">Cooking</a></li>
+												<li><a href="#">Food Storage Boxes</a></li>
+												<li><a href="#">Spice Jars</a></li>
+												<li><a href="#">Napskins</a></li>
+												<li><a href="#">Oven Gloves</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="pb-4 order-1 col-sm-6 col-xl-2">
+										<div class="pl-xl-4">
+											<div class="title">OFFICE</div>
+											<hr class="sm">
+											<ul class="list-unstyled">
+												<li><a href="#">Office Desks</a></li>
+												<li><a href="#">Meeting Tables</a></li>
+												<li><a href="#">Task Chairs</a></li>
+											</ul>
+										</div>
+
+									</div>
+									<div class="pb-4 col-sm-6 col-xl-2 order-xl-2">
+										<div class="pl-xl-3">
+											<div class="title">LIGHTING</div>
+											<hr class="sm">
+											<ul class="list-unstyled">
+												<li><a href="#">Fllor Lamps</a></li>
+												<li><a href="#">Wall Lamps</a></li>
+												<li><a href="#">Celling Lamps</a></li>
+												<li><a href="#">Table Lamps</a></li>
+												<li><a href="#">Spotlights</a></li>
+												<li><a href="#">Light Letter</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="pb-4 pb-md-0 col-md-6">
+									<div class="sofas text-center">
+										<div class="title">SOFAS</div>
+										<div class="subtitle">50% OFF</div>
+									</div>
+								</div>
+								<div class="pb-4 pb-md-0 col-md-6">
+									<div class="totem text-right">
+										<div class="title">TOTEM FLOOR LAMP</div>
+										<div class="subtitle">SHOP NOW</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-xl-2">
+						<a class="nav-link" href="#">PAGES<i class="icon-down-open"></i></a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-x-2 dropdown">
+						<a class="nav-link" href="#">BLOG</a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 ml-xl-2 dropdown">
+						<a class="nav-link" href="#">ABOUT</a>
+					</li>
+					<li class="nav-item li-1 px-xl-2 mx-xl-3">
+						<a class="nav-link" href="#">CONTACT</a>
+					</li>
+					<li class="nav-item li-1 searchs mx-xl-2">
+						<a class="nav-link" href="#"><i class="icon-search"></i></a>
+						<div class="dropdown-menu text-center">
+							<div class="input-container d-flex justify-content-center align-items-center">
+								<input type="text" class="bg-transparent pl-4" placeholder="Search">
+								<span>
+									<i class="icon-mic-outline"></i>
+									<i class="icon-search"></i>
+								</span>
+							</div>
+							<div class="delete-btn d-inline-block p-2">
+								<i class="icon-cancel-2"></i>
+							</div>
+
+						</div>
+					</li>
+					<li class="nav-item li-1">
+						<a class="nav-link" href="#"><i class="icon-heart"></i></a>
+					</li>
+					<li class="nav-item li-1 dropdown bags">
+						<a class="nav-link bg-item" href="#">
+							<i class="icon-shopping-bag position-relative">
+								<span class="buy-nb d-inline-block position-absolute text-center text-white">3</span>
+							</i>
+						</a>
+						<div class="dropdown-menu border-0 bg-white px-4 py-5">
+							<div class="px-3">
+								<div class="media pt-1 pb-3">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+								<div class="media pb-3">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+								<div class="media">
+									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
+									<div class="media-body">
+										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
+										<div class="d-flex justify-content-between">
+											<div class="price"><i class="icon-euro"></i>599,00</div>
+											<i class="icon-cancel-1"></i>
+										</div>
+										<div class="qty">Qty: 1</div>
+									</div>
+								</div>
+
+								<hr>
+								<div class="d-flex justify-content-between py-1">
+									<span class="total">Sub Total</span><span class="price icon-euro">799,00</span>
+								</div>
+								<hr>
+								<div class="d-flex">
+									<button type="submit" class="view-btn btn flex-fill mr-4">VIEW
+										CART</button>
+									<button type="submit" class="check-btn btn flex-fill text-white">CHECKOUT</button>
+								</div>
+							</div>
+							<span class="arrow position-absolute"></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="content">
+		<div class="page-title text-center mb-4">
+			<div class="title">CHAIRS</div>
+			<div class="breadcrumbs">
+				<a href="home.html" class="text-decoration-none">Home</a>
+				<i class="icon-right-open"></i>
+				<a href="#" class="text-decoration-none">Projects</a>
+				<i class="icon-right-open"></i>
+				<a href="#" class="text-decoration-none">Chairs</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="sidebar pb-5 mb-5 pb-xl-0 mb-xl-0 col-xl-3">
+					<div class="filter px-3 pt-4 pb-5">
+						<div class="title pt-2 pl-3 pb-4">FILTER</div>
+						<div class="subtitle pl-3 pb-3">Filter by Brands</div>
+
+						<form class="px-3">
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Casali</label>
+								<label class="form-check-label" for="exampleCheck1">2</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Decar</label>
+								<label class="form-check-label" for="exampleCheck1">12</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Fantini</label>
+								<label class="form-check-label" for="exampleCheck1">4</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Flamentstyle</label>
+								<label class="form-check-label" for="exampleCheck1">4</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Heerenhuis</label>
+								<label class="form-check-label" for="exampleCheck1">6</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Hoffmann</label>
+								<label class="form-check-label" for="exampleCheck1">10</label>
+							</div>
+							<div class="form-group form-check d-flex mb-1">
+								<input type="checkbox" class="form-check-input" id="">
+								<label class="form-check-label mr-auto" for="exampleCheck1">Italfoor</label>
+								<label class="form-check-label" for="exampleCheck1">3</label>
+							</div>
+						</form>
+
+						<hr class="ml-3 mr-3 my-3">
+
+						<div class="subtitle pl-3 pb-3">Filter by Price</div>
+
+						<div id="slider-range" class="mx-3"></div>
+
+						<div class="price px-3 d-flex align-items-center">
+							<label for="amount">Price</label>
+							<input type="text" id="amount">
+							<button type="submit" class="btn text-white py-0 px-2 ml-auto">Filter</button>
+						</div>
+					</div>
+
+					<div class="categories pt-4 mt-2 pb-5">
+						<div class="title pb-4">CATEGORIES</div>
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" class="d-flex align-items-center text-decoration-none">CHAIRS
+									<span class="ml-auto">12</span></a>
+							</li>
+							<li><a href="#" class="d-flex align-items-center border-top text-decoration-none">SOFAS<span
+										class="ml-auto">24</span></a></li>
+							<li><a href="#"
+									class="d-flex align-items-center border-top text-decoration-none">ARMCHAIRS<span
+										class="ml-auto">9</span></a></li>
+							<li><a href="#"
+									class="d-flex align-items-center border-top text-decoration-none">BEDROOM<span
+										class="ml-auto">2</span></a></li>
+							<li><a href="#"
+									class="d-flex align-items-center border-top text-decoration-none">LIGHTING<span
+										class="ml-auto">17</span></a></li>
+							<li><a href="#"
+									class="d-flex align-items-center border-top text-decoration-none">KITCHEN<span
+										class="ml-auto">10</span></a></li>
+							<li><a href="#"
+									class="d-flex align-items-center border-top text-decoration-none">ACCESSORIES<span
+										class="ml-auto">23</span></a></li>
+						</ul>
+					</div>
+
+					<div class="hot">
+						<div class="title pb-4">HOT SALE</div>
+						<div class="media pb-4">
+							<img src="http://via.placeholder.com/79x79/eee/222" class="mr-3" alt="...">
+							<div class="media-body">
+								<h5 class="pt-2 mb-1">Egon Wooden Chair</h5>
+								<div class="stars ml-1">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-empty"></i>
+								</div>
+								<div class="price"><span>$75,00</span> &nbsp; $55,00</div>
+							</div>
+						</div>
+						<div class="media pb-3">
+							<img src="http://via.placeholder.com/79x79/eee/222" class="mr-3" alt="...">
+							<div class="media-body">
+								<h5 class="pt-2 mt-1 mb-1">Egon Wooden Chair</h5>
+								<div class="stars ml-1">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-empty"></i>
+								</div>
+								<div class="price"><span>$75,00</span> $55,00</div>
+							</div>
+						</div>
+						<div class="media pb-3">
+							<img src="http://via.placeholder.com/79x79/eee/222" class="mr-3" alt="...">
+							<div class="media-body">
+								<h5 class="pt-2 mt-1 mb-1">Egon Wooden Chair</h5>
+								<div class="stars ml-1">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-empty"></i>
+								</div>
+								<div class="price"><span>$75,00</span> $55,00</div>
+							</div>
+						</div>
+						<div class="media">
+							<img src="http://via.placeholder.com/79x79/eee/222" class="mr-3" alt="...">
+							<div class="media-body">
+								<h5 class="pt-2 mt-1 mb-1">Egon Wooden Chair</h5>
+								<div class="stars ml-1">
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star"></i>
+									<i class="icon-star-empty"></i>
+								</div>
+								<div class="price"><span>$75,00</span> $55,00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xl-9">
+					<div class="showing d-sm-flex mb-1 justify-content-sm-between">
+						<div class="info pb-3 pb-sm-0">
+							Showing <b>1-9</b> of <b>65</b> results<br>View &nbsp; 9/18/27/All
+						</div>
+
+						<div class="default">
+							<form action="" class="d-inline-block">
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Default Sorting</option>
+										<option>2</option>
+										<option>3</option>
+									</select>
+								</div>
+							</form>
+							<a href="#" class="d-inline-block text-center rounded-circle ml-2"><i
+									class="icon-th-large"></i></a>
+							<a href="#" class="d-inline-block text-center rounded-circle ml-1"><i
+									class="icon-th-list"></i></a>
+						</div>
+					</div>
+
+					<div class="featureds pb-5">
+						<div class="featured active">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair 1</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Marvelous Modern 3 Seater</div>
+										<div class="price"><i class="icon-euro"></i> 599,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 box pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Chair with armrests</div>
+										<div class="price"><i class="icon-euro"></i> 200,00</div>
+									</div>
+									<div class="off-mark d-inline-block">15% Off</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Pouf Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Jalis Counter stool</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Lucky Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Cut Chair with 4 Spoke Base</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Yard SeChair</div>
+										<div class="price"><i class="icon-euro"></i> 139,00</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="featured">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair 2</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Marvelous Modern 3 Seater</div>
+										<div class="price"><i class="icon-euro"></i> 599,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 box pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Chair with armrests</div>
+										<div class="price"><i class="icon-euro"></i> 200,00</div>
+									</div>
+									<div class="off-mark d-inline-block">15% Off</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Pouf Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Jalis Counter stool</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Lucky Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Cut Chair with 4 Spoke Base</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Yard SeChair</div>
+										<div class="price"><i class="icon-euro"></i> 139,00</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="featured">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair 3</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Marvelous Modern 3 Seater</div>
+										<div class="price"><i class="icon-euro"></i> 599,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 box pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Chair with armrests</div>
+										<div class="price"><i class="icon-euro"></i> 200,00</div>
+									</div>
+									<div class="off-mark d-inline-block">15% Off</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Pouf Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Jalis Counter stool</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Lucky Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Cut Chair with 4 Spoke Base</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Yard SeChair</div>
+										<div class="price"><i class="icon-euro"></i> 139,00</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="featured">
+							<div class="row">
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair 4</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Marvelous Modern 3 Seater</div>
+										<div class="price"><i class="icon-euro"></i> 599,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 box pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Chair with armrests</div>
+										<div class="price"><i class="icon-euro"></i> 200,00</div>
+									</div>
+									<div class="off-mark d-inline-block">15% Off</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Pouf Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Jalis Counter stool</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5 mb-2">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Bombi Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Lucky Chair</div>
+										<div class="price"><i class="icon-euro"></i> 399,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Cut Chair with 4 Spoke Base</div>
+										<div class="price"><i class="icon-euro"></i> 269,00</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 pb-5">
+									<img src="https://dummyimage.com/275x275/eee/666" alt="">
+									<div class="package">
+										<div class="stars pl-1 text-white">
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star"></i>
+											<i class="icon-star-empty"></i>
+										</div>
+										<div class="title">Yard SeChair</div>
+										<div class="price"><i class="icon-euro"></i> 139,00</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<nav aria-label="...">
+						<ul class="pagination justify-content-center">
+							<li class="page-item"><a class="page-link active border-0 rounded-0 mr-2" href="#">1</a>
+							</li>
+							<li class="page-item"><a class="page-link border-0 mr-2" href="#">2</a></li>
+							<li class="page-item"><a class="page-link border-0 rounded-0 mr-2" href="#">3</a></li>
+							<li class="page-item"><a class="page-link border-0 rounded-0" href="#">4</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="text-center text-xl-left">
+		<div class="container">
+			<div class="free-shipping">
+				<div class="row text-center text-xl-left d-xl-flex justify-content-xl-between">
+					<div class="col-md-6 col-xl-3">
+						<i class="icon-flight"></i>
+						<div class="package d-inline-block">
+							<div class="free-shipping-title">FREE SHIPPING</div>
+							<div class="free-shipping-subtitle">Free shipping on all US order</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3">
+						<i class="icon-lifebuoy"></i>
+						<div class="package d-inline-block">
+							<div class="free-shipping-title text-left">SUPPORT 24/7</div>
+							<div class="free-shipping-subtitle">We support 24 hours a day</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3">
+						<div class="pl-xl-3">
+							<i class="icon-dropbox"></i>
+							<div class="package d-inline-block">
+								<div class="free-shipping-title">GIFT CARDS</div>
+								<div class="free-shipping-subtitle">Give perfect gift</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3">
+						<div class="box">
+							<i class="icon-money"></i>
+							<div class="package d-inline-block">
+								<div class="free-shipping-title">PAYMENT 100% SECURE</div>
+								<div class="free-shipping-subtitle">payment 100% secure</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="container">
+				<div class="row">
+					<div class="mb-5 col-md-6 col-xl-4">
+						<div class="logos">
+							<img src="image/logo_g.png" alt="logo">
+							<p class="py-4 mb-2 mt-0">Exercitation ullamco laboris nisi ut aliquip ex commodo consequat.
+								Duis aute irure</p>
+							<div class="map pb-4">
+								<i class="icon-location"></i>
+								<span>
+									Connaugt Road Central Suite 18B,148 New Yankee
+								</span>
+							</div>
+							<div class="phone">
+								<i class="icon-phone-1 pr-1"></i>
+								<a href="tel:+1-555-333-22-11" class="text-decoration-none">+1 (555) 333 22 11</a>
+							</div>
+							<div class="email">
+								<i class="icon-mail pr-1"></i>
+								<a href="mailto:info@schon.chair" class="text-decoration-none">info@schon.chair</a>
+							</div>
+						</div>
+					</div>
+					<div class="mb-5 col-md-6 col-xl-1">
+						<div class="category">
+							<div class="title">Categories</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">Chairs</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Sofa</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Living</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Bedroom</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Tables</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">New</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mb-5 col-md-6 col-xl-2">
+						<div class="information pl-xl-5">
+							<div class="title">Information</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">About Us</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Contact Us</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Team&amp;Conditions</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Privacy Policy</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Customer Service</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">FAQ<small>s</small></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mb-5 col-md-6 col-xl-2">
+						<div class="account pl-xl-5">
+							<div class="title">Account</div>
+							<ul class="list-unstyled">
+								<li><a class="d-inline-block w-100 h-100" href="#">My Account</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Order Tracking</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Wish List</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Shipping Cart</a></li>
+								<li><a class="d-inline-block w-100 h-100" href="#">Checkout</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="signs text-xl-right">
+							<div class="title sign">Sing Up Newslatter</div>
+
+							<div
+								class="input-container subscribe-btn border-0 d-flex justify-content-between align-content-center mx-auto ml-xl-auto mr-xl-0">
+								<input type="text" class="bg-white border-0 pl-4" placeholder="Your e-mail">
+								<a href="#"
+									class="d-inline-block text-center text-white text-decoration-none">Subscribe</a>
+							</div>
+
+							<div class="subtitle">Follow Us</div>
+							<div class="social-media">
+								<a href="#"><i class="icon-twitter"></i></a>
+								<a href="#"><i class="icon-facebook-1"></i></a>
+								<a href="#"><i class="icon-gplus mr-1"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+								<a href="#"><i class="icon-whatsapp"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<div class="container">
+				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+					<div class="copyright">&copy;<span>sch&Ouml;n.</span> - All rights Reserved
+					</div>
+					<div class="payment">
+						<img src="image/payment.png" alt="payment">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function () {
+			$("#slider-range").slider({
+				range: true,
+				min: 0,
+				max: 800,
+				values: [10, 599],
+				slide: function (event, ui) {
+					$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+				}
+			});
+			$("#amount").val("$" + $("#slider-range").slider("values", 0) +
+				"  -  $" + $("#slider-range").slider("values", 1));
+		});
+	</script>
+</body>
+
+</html>
