@@ -1983,6 +1983,10 @@ button.checkout {
   background-color: white;
   border: 3px solid #494949;
 }
+.product-list .content .sidebar #slider-range .ui-state-default.ui-state-focus,
+.product-list .content .sidebar #slider-range .ui-widget-content .ui-state-default.ui-state-focus {
+  outline: none;
+}
 .product-list .content .sidebar .price label {
   margin: 0 10px 0 0;
 }
