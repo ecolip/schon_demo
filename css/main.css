@@ -2151,6 +2151,7 @@ button.checkout {
   height: 48px;
   width: 258px;
   padding-left: 30px;
+  outline: none;
 }
 .order-shopping-car .content .shopping-items .apply .btn {
   width: 111px;
