@@ -26,12 +26,6 @@ $(document).ready(function(){
 		$('.tab-content').removeClass('active').eq(index).addClass('active');
 	});
 
-	$('.product-sm-list .owl-carousel img').click(function(e){
-		var index = $(e.currentTarget).index();
-		console.log(index); /*為什麼index永遠都是0呢?*/
-		$('.list-img img').removeClass('active').eq(index).addClass('active');
-	});
-
 	//product-list->pagenation
 	$('.pagination .page-link').click(function(e){
 		e.preventDefault();
@@ -41,10 +35,10 @@ $(document).ready(function(){
 		$('.featureds .featured').removeClass('active').eq(indexPage).addClass('active');
 	});
 
-	//language choice
-	// $('.language').click(function(){
-	// 	$('.language-menu').toggleClass('active');
-	// });
+	//order->language choice
+	$('.language').click(function(){
+		$('.language-menu').toggleClass('active');
+	});
 
 	
 

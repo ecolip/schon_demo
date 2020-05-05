@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Product-detail</title>
+	<title>Order-checkout</title>
 
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 
@@ -15,31 +15,45 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- <scrip src="js/owl.carousel2.thumbs.min.js"></scrip> -->
 	<script src="js/main.js"></script>
 
 
 
 </head>
 
-<body class="product-detail">
-	<div id="header" class="full-width bg-transparent px-5 py-4 mt-2 mb-3">
-		<nav class="navbar navbar-expand-xl navbar-light m-0 p-0">
-			<div class="box d-flex mr-auto">
-				<a class="navbar-brand p-0 mr-4" href="#">
-					<img src="image/logo.png" alt="logo">
-				</a>
-				<a class="phone d-none d-xl-flex align-items-end text-decoration-none"
-					href="tel:+1-555-333-22-11">+1&nbsp; (555)&nbsp;
-					333&nbsp; 22&nbsp; 11</a>
+<body class="order-checkout">
+	<div id="header" class="position-absolute w-100">
+		<div class="container">
+			<div class="text-center d-sm-flex align-items-sm-center bg-transparent py-2 my-2">
+				<div class="phone mr-sm-auto">
+					<i class="icon-phone-1 px-sm-1"></i>
+					<a href="tel:+1-555-333-22-11"
+						class="text-decoration-none">+1&nbsp;(555)&nbsp;333&nbsp;222&nbsp;11</a>
+				</div>
+				<ul class="logins list-unstyled">
+					<li class="d-inline-block">Login or Create Account</li>
+					<li class="d-inline-block px-2"><span>&nbsp;|&nbsp;</span></li>
+					<li class="d-inline-block language">
+						Langauge<i class="icon-angle-down"></i>
+						<ul class="language-menu list-unstyled position-absolute bg-white p-3">
+							<li>menu1</li>
+							<li>menu2</li>
+							<li>menu3</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-xl navbar-light bg-white ml-auto py-4 d-xl-flex justify-content-xl-between align-content-xl-center">
+			<a class="navbar-brand pl-4" href="#">
+				<img src="image/logo.png" alt="logo">
+			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -235,261 +249,220 @@
 	</div>
 
 	<div class="content">
-		<div class="product-sale pb-5 mb-5">
+		<div class="page-title">
 			<div class="container">
+				<div class="title text-center">CHECK OUT</div>
+				<div class="breadcrumbs">
+					<a href="home.html" class="text-decoration-none">Home</a>
+					<i class="icon-right-open"></i>
+					<a href="#" class="text-decoration-none">CheckOut</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flows text-center">
+			<ul class="list-unstyled d-sm-flex justify-content-center">
+				<li class="active pr-1">
+					<div class="number">01</div>
+					<div class="title">Shopping Cart</div>
+				</li>
+				<li class="dash d-flex align-items-center">
+					<hr>
+				</li>
+				<li class="active px-2 mx-1">
+					<div class="number">02</div>
+					<div class="title">Check Out</div>
+				</li>
+				<li class="dash d-flex align-items-center">
+					<hr>
+				</li>
+				<li class="">
+					<div class="number">03</div>
+					<div class="title">Order Complete</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="billing">
+			<div class="container">
+				<div class="title">BILLING DETAILS</div>
 				<div class="row">
 					<div class="col-xl-6">
-						<div class="chart py-4 my-2">
-							<i class="icon-heart-1"></i><span>27</span>
-							<i class="icon-chat-1"></i><span>12</span>
-							<i class="icon-share"></i><span>14</span>
-						</div>
-						<div class="product-sm-list px-3 mx-3">
-							<div class="owl-carousel">
-								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
-							</div>
-							<div class="owl-thumbs" data-slider-id="1">
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-							</div>
+						<div class="box pr-xl-5">
+							<form action="">
+								<div class="form-group">
+									<select class="form-control" id="exampleFormControlSelect1"
+										placeholder="Select Country">
+										<option>Select Country</option>
+										<option>TAIWAN</option>
+										<option>USA</option>
+									</select>
+									<div class="row">
+										<div class="col-xl-6">
+											<input type="text" class="form-control" id="exampleInputPassword1"
+												placeholder="Name">
+										</div>
+										<div class="col-xl-6">
+											<input type="text" class="form-control" id="exampleInputPassword1"
+												placeholder="Last Name">
+										</div>
+									</div>
+									<input type="text" class="form-control" id="exampleInputPassword1"
+										placeholder="Company Name">
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+										placeholder="Address"></textarea>
+									<input type="text" class="form-control" id="exampleInputPassword1"
+										placeholder="Town/ City">
+									<input type="text" class="form-control" id="exampleInputPassword1"
+										placeholder="State/ Country">
+									<input type="text" class="form-control" id="exampleInputPassword1"
+										placeholder="Postcode/ Zip">
+									<div class="row">
+										<div class="col-xl-6">
+											<input type="text" class="form-control" id="exampleInputPassword1"
+												placeholder="Email Address">
+										</div>
+										<div class="col-xl-6">
+											<input type="text" class="form-control" id="exampleInputPassword1"
+												placeholder="Phone Number">
+										</div>
+									</div>
+									<div class="form-check d-flex pb-3">
+										<input class="form-check-input h-auto" type="checkbox" id="gridCheck">
+										<label class="form-check-label" for="gridCheck">
+											Ship to a different address?
+										</label>
+									</div>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+										placeholder="Order Notes"></textarea>
+								</div>
+							</form>
 						</div>
 					</div>
 
 					<div class="col-xl-6">
-						<div class="box pl-xl-4 ml-xl-3">
-							<div class="breadcrumbs pt-4 mt-2">
-								<a href="#" class="text-decoration-none">Chairs</a>
-								<i class="icon-right-open"></i>
-								<a href="#" class="text-decoration-none">Products</a>
-							</div>
-							<div class="title pb-2">KAILA FABRIC CHAIR</div>
-							<div class="stars pb-4 mb-2 ml-1">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star-empty"></i>
-								<span>Reviews(12)</span>
-							</div>
-							<div class="chart compare d-sm-flex pb-3">
-								<div>
-									<i class="icon-share pr-2"></i><span class="mr-3">SHARE</span>
+						<div class="ml-xl-4">
+							<div class="box1">
+								<div class="your-order">
+									<div class="title pb-4 mb-1">YOUR ORDER</div>
+									<ul class="list-unstyled">
+										<li>
+											<div class="clearfix pb-2">
+												<span class="float-left">PRODUCTS</span>
+												<span class="float-right">TOTALS</span>
+											</div>
+											<div class="clearfix">
+												<span class="small float-left">Marvelous Modern 3
+													Seater&nbsp;&nbsp;&nbsp;x1</span>
+												<span class="price float-right"><i class="icon-euro"></i>299,00</span>
+											</div>
+											<div class="clearfix">
+												<span class="small float-left">Bombi Chair&nbsp;&nbsp;&nbsp;x1</span>
+												<span class="price float-right"><i class="icon-euro"></i>532,00</span>
+											</div>
+										</li>
+										<li class="clearfix">
+											<span class="float-left">CART SUBTOTAL</span>
+											<span class="price float-right"><i class="icon-euro"></i>532,00</span>
+										</li>
+										<li class="clearfix">
+											<span class="float-left">SHIPPING</span>
+											<span class="price float-right">Free Shipping</span>
+										</li>
+										<li class="clearfix border-0">
+											<span class="float-left">ORDER TOTAL</span>
+											<span class="price float-right"><i class="icon-euro"></i>1299,00</span>
+										</li>
+									</ul>
 								</div>
-								<div>
-									<i class="icon-exchange-1 pr-2"></i><span class="mr-3">COMPARE</span>
+
+								<div class="payment-method">
+									<div class="title">PAYMENT METHODS</div>
+									<ul class="list-unstyled">
+										<li>
+											<div class="clearfix">
+												<span class="float-left">DIRECT BANK TRANSFER</span>
+												<div class="form-check float-right">
+													<input class="form-check-input position-static h-auto"
+														type="checkbox" id="blankCheckbox" value="option1"
+														aria-label="...">
+												</div>
+											</div>
+											<p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+												Modi
+												tempore odio accusantium molestiae similique, quibusdam porro pariatur
+												dicta
+												atque natus quod asperiores.</p>
+										</li>
+										<li class="clearfix">
+											<span class="float-left">CHEQUE PAYMENT</span>
+											<div class="form-check float-right">
+												<input class="form-check-input position-static h-auto" type="checkbox"
+													id="blankCheckbox" value="option1" aria-label="...">
+											</div>
+										</li>
+										<li class="clearfix border-0">
+											<span class="float-left">PAYPAL</span>
+											<div class="form-check float-right">
+												<input class="form-check-input position-static h-auto" type="checkbox"
+													id="blankCheckbox" value="option1" aria-label="...">
+											</div>
+										</li>
+
+									</ul>
 								</div>
-								<div>
-									<i class="icon-heart-1 pr-2"></i><span>ADD TO WISHLIST</span>
-								</div>
-							</div>
-							<hr class="pb-2">
-
-							<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eum
-								eveniet
-								voluptas. Harum nemo consequatur repellendus iusto quis dolor doloribus ipsum voluptatum
-								fugit fuga adipisci omnis nesciunt aliquam, facilis,eaque id. Sequi?</p>
-
-							<p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-								vitae iure non quisquam perferendis ullam necessitatibus dolorum magni beatae, neque
-								eaque
-								esse corrupti odit earum nam quidem ratione voluptatem. Corporis beatae maiores fugiat
-								sunt
-								accusantium, sint molestiae cupiditate quasi praesentium delectus nam dicta eum commodi,
-								saepe magnam modi consequatur, officia tempora amet!</p>
-							<hr>
-
-							<div class="price pt-2 pb-1 mb-4">$ 79.00 <span class="pl-2">399,00</span>
 							</div>
 
-							<div class="qty">
-								<form action="">
-									<div class="form-row align-items-center">
-										<div class="col-auto my-1">QTY:</div>
-										<div class="col-auto my-1 ml-3">
-											<select class="custom-select mr-sm-2 border-0 pl-4"
-												id="inlineFormCustomSelect">
-												<option selected>1</option>
-												<option value="1">2</option>
-												<option value="2">3</option>
-												<option value="3">4</option>
-											</select>
-										</div>
-										<div class="col-auto my-1">
-											<button type="submit" class="btn">ADD TO CART</button>
-										</div>
-									</div>
-								</form>
+							<div class="accept bg-white d-flex justify-content-between">
+								<p class="mr-auto">I've read & accept the <span>terms&conditions</span></p>
+								<input class="form-check-input position-static h-auto mr-2" type="checkbox"
+									id="blankCheckbox" value="option1" aria-label="...">
 							</div>
+							<div class="d-flex justify-content-center justify-content-xl-end">
+								<button class="checkout " type="submit">PROCEED TO CHECKOUT<i
+										class="icon-ok"></i></button>
+							</div>
+
+
 						</div>
-
-
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="choice-info">
+		<div class="free-shipping">
 			<div class="container">
-				<ul class="tab list-unstyled text-center d-md-flex justify-content-center">
-					<li class="pb-2 active">DESCRIPTION</li>
-					<li class="pb-2">INFORMATION</li>
-					<li class="pb-2">REVIEWS (12)</li>
-				</ul>
-
-				<hr class="m-0">
-				<div class="tab-contents">
-					<div class="tab-content active">
-						<p class="pt-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolorem
-							voluptatem modi fugiat mollitia quod maxime quaerat repudiandae, provident veniam architecto
-							recusandae, aspernatur cumque quidem.</p>
-
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
-							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
-							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
-							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
-							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
-							elit.<br>H830 x L585 x P 540 mm</p>
-					</div>
-					<div class="tab-content">
-						<p class="pt-4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nobis
-							officiis, mollitia explicabo dolorum aspernatur, perspiciatis labore temporibus alias
-							molestiae ratione saepe quia quasi earum.</p>
-
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
-							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
-							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
-							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
-							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
-							elit.<br>H830 x L585 x P 540 mm</p>
-					</div>
-					<div class="tab-content">
-						<p class="pt-4 mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa repudiandae
-							illum
-							corporis adipisci nemo molestiae debitis dolore, blanditiis voluptas sint? Laudantium
-							possimus nam unde eum?</p>
-
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde officia non,
-							dolorum libero velit suscipit quod quam ducimus adipisci blanditiis dolorem voluptatem enim
-							labore praesentium iure ipsam? Rerum adipisci quibusdam doloremque. Porro iure quidem ut
-							vero provident quae aperiam similique, dolorum odit numquam, laboriosam aliquam
-							voluptatum.<br>Lorem, ipsum dolor.<br>Lorem ipsum dolor sit amet, consectetur adipisicing
-							elit. Quia, doloremque recusandae?<br>Lorem ipsum dolor sit amet consectetur adipisicing
-							elit.<br>H830 x L585 x P 540 mm</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="best-sellers">
-			<div class="container position-relative">
-				<div class="infos py-4">
-					<div class="title">RELATED PRODUCTS</div>
-				</div>
-
-				<div class="owl-carousel">
-					<div class="item">
-						<div class="box w-100">
-							<img src="https://dummyimage.com/213x213/eee/222" alt="">
-							<div class="stars pl-3 ml-1">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star-empty"></i>
-							</div>
-							<div class="mark-new puff d-inline-block text-white bg-black">NEW</div>
-						</div>
-
-						<div class="package pl-3">
-							<div class="title pt-3">Puff Chair</div>
-							<div class="price"><i class="icon-euro"></i> 287,00</div>
+				<div class="row text-center text-xl-left d-xl-flex justify-content-xl-between">
+					<div class="col-md-6 col-xl-3">
+						<i class="icon-flight"></i>
+						<div class="package d-inline-block">
+							<div class="free-shipping-title">FREE SHIPPING</div>
+							<div class="free-shipping-subtitle">Free shipping on all US order</div>
 						</div>
 					</div>
-					<div class="item">
-						<div class="box w-100">
-							<img src="https://dummyimage.com/213x213/eee/222" alt="">
-							<div class="add-menu d-flex bd-highlight bg-white w-100 text-center">
-								<div class="p-3 flex-fill bd-highlight">
-									<a href="#"><i class="icon-shopping-bag pr-1"></i>Add to Car</a>
-								</div>
-								<div class="px-2 py-3 flex-fill bd-highlight border-right border-left">
-									<a href="#"><i class=" icon-heart"></i></a>
-								</div>
-								<div class="px-2 py-3 flex-fill bd-highlight">
-									<a href="#"><i class="icon-exchange-1"></i></a>
-								</div>
+					<div class="support col-md-6 col-xl-3">
+						<i class="icon-lifebuoy"></i>
+						<div class="package d-inline-block">
+							<div class="free-shipping-title text-left">SUPPORT 24/7</div>
+							<div class="free-shipping-subtitle">We support 24 hours a day</div>
+						</div>
+					</div>
+					<div class="gift col-md-6 col-xl-3">
+						<div class="pl-xl-3">
+							<i class="icon-dropbox"></i>
+							<div class="package d-inline-block">
+								<div class="free-shipping-title">GIFT CARDS</div>
+								<div class="free-shipping-subtitle">Give perfect gift</div>
 							</div>
 						</div>
-
-						<div class="package pl-3">
-							<div class="title pt-3">Bombi Chair</div>
-							<div class="price"><i class="icon-euro"></i> 399,00</div>
-						</div>
 					</div>
-					<div class="item">
-						<img src="https://dummyimage.com/213x213/eee/222" alt="">
-						<div class="package">
-							<div class="title pt-3">Wood Chair</div>
-							<div class="price"><i class="icon-euro"></i> 198,00</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="box w-100">
-							<img src="https://dummyimage.com/213x213/eee/222" alt="">
-							<div class="mark-off d-inline-block text-white">15% Off</div>
-							<div class="mark-new bombi d-inline-block text-white">NEW</div>
-						</div>
-
-						<div class="package pl-3">
-							<div class="title pt-3 nostar">Bombi Chair</div>
-							<div class="price"><i class="icon-euro"></i> 200,00</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="box w-100">
-							<img src="https://dummyimage.com/213x213/eee/222" alt="">
-							<div class="eye-menu-out text-center w-100">
-								<div class="eye-menu d-inline-block px-2 py-1 bg-white">
-									<div class="d-inline-block">
-										<a href="#" class="p-2 inline-block text-center"><i
-												class="icon-shopping-bag"></i></a>
-									</div>
-									<span>|</span>
-									<div class="d-inline-block">
-										<a href="#" class="p-2 inline-block text-center"><i class="icon-heart"></i></a>
-									</div>
-									<span>|</span>
-									<div class="d-inline-block">
-										<a href="#" class="p-2 inline-block text-center"><i class="icon-eye"></i></a>
-									</div>
-								</div>
+					<div class="col-md-6 col-xl-3">
+						<div class="box">
+							<i class="icon-money"></i>
+							<div class="package d-inline-block">
+								<div class="free-shipping-title">PAYMENT 100% SECURE</div>
+								<div class="free-shipping-subtitle">payment 100% secure</div>
 							</div>
-						</div>
-						<div class="package pl-3">
-							<div class="title pt-3 nostar">Bombi Chair</div>
-							<div class="price"><i class="icon-euro"></i> 200,00</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="box w-100">
-							<img src="https://dummyimage.com/213x213/eee/222" alt="">
-							<div class="stars pl-3 ml-1">
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star"></i>
-								<i class="icon-star-empty"></i>
-							</div>
-							<div class="mark-new puff d-inline-block text-white bg-black">NEW</div>
-						</div>
-
-						<div class="package pl-3">
-							<div class="title pt-3">Puff Chair</div>
-							<div class="price"><i class="icon-euro"></i> 287,00</div>
 						</div>
 					</div>
 				</div>
@@ -497,8 +470,8 @@
 		</div>
 	</div>
 
-	<div id="footer">
-		<div class="info text-center text-xl-left">
+	<div id="footer" class="text-center w-1600">
+		<div class="info text-xl-left">
 			<div class="container">
 				<div class="row">
 					<div class="pb-5 col-sm-6 col-xl-4">
@@ -596,7 +569,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bottom text-center">
+		<div class="bottom">
 			<div class="container">
 				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
 					<div class="copyright">&copy; <span>sch&Ouml;n.</span> -
@@ -615,47 +588,8 @@
 		</div>
 	</div>
 
-	<script>
-		$(document).ready(function () {
-			$('.product-sale .owl-carousel').owlCarousel({
-				items: 1,
-				nav: true,
-				dots:false,
-				thumbs: true,
-				thumbsPrerendered: true,
-				thumbImage:false,
-				thumbContainer: 'owl-thumbs',
-				thumbItemClass:'owl-thumb-item',
-				// loop: true,	/*Infinity loop*/
-				// autoplay: true, /**/
-				// autoplayTimeout: 3000, /* 輪播速度*/
-			});
-		});
-		$(document).ready(function () {
-			$('.best-sellers .owl-carousel').owlCarousel({
-				items: 5,
-				margin: 32,
-				loop: true,	/*Infinity loop*/
-				autoplay: true,
-				autoplayTimeout: 3000, /* 輪播速度*/
-				responsive: {
-					0: {
-						items: 1,
-					},
-					576: {
-						items: 2,
-					},
-					768: {
-						items: 3,
-					},
-					1200: {
-						items: 5,
-					},
-				}
-			});
-		});
+	<div class="view-container"></div>
 
-	</script>
 </body>
 
 </html>
