@@ -48,8 +48,8 @@
 					<li class="nav-item li-1 px-xl-2">
 						<a class="nav-link" href="#">HOME</a>
 					</li>
-					<li class="nav-item li-1 products px-xl-2 ml-xl-2 bg-item">
-						<a class="nav-link position-relative" href="#">
+					<li class="nav-item li-1 products px-xl-2 ml-xl-2">
+						<a class="nav-link bg-item position-relative" href="#">
 							PRODUCTS<i class="icon-down-open"></i>
 							<span class="arrow position-absolute"></span>
 						</a>
@@ -171,15 +171,15 @@
 					<li class="nav-item li-1">
 						<a class="nav-link" href="#"><i class="icon-heart"></i></a>
 					</li>
-					<li class="nav-item li-1 dropdown bags bg-item">
-						<a class="nav-link" href="#">
+					<li class="nav-item li-1 dropdown bags">
+						<a class="nav-link bg-item" href="#">
 							<i class="icon-shopping-bag position-relative">
 								<span class="buy-nb d-inline-block position-absolute text-center text-white">3</span>
 							</i>
 						</a>
 						<div class="dropdown-menu border-0 bg-white px-4 py-5">
 							<div class="px-3">
-								<div class="media pt-1 pb-3">
+								<div class="media pb-3">
 									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
 									<div class="media-body">
 										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
@@ -201,7 +201,7 @@
 										<div class="qty">Qty: 1</div>
 									</div>
 								</div>
-								<div class="media">
+								<div class="media pb-3">
 									<img src="http://via.placeholder.com/74x74/eee/222" class="mr-3" alt="product">
 									<div class="media-body">
 										<h5 class="pt-2 mb-1">Marvelous Modern 3 Seater</h5>
@@ -213,7 +213,7 @@
 									</div>
 								</div>
 
-								<hr>
+								<hr class="mt-0">
 								<div class="d-flex justify-content-between py-1">
 									<span class="total">Sub Total</span><span class="price icon-euro">799,00</span>
 								</div>
@@ -376,8 +376,8 @@
 		</div>
 	</div>
 
-	<div id="footer">
-		<div class="info text-center text-xl-left">
+	<div id="footer" class="text-center">
+		<div class="info text-xl-left">
 			<div class="container">
 				<div class="row">
 					<div class="pb-5 col-sm-6 col-xl-4">
@@ -475,14 +475,14 @@
 				</div>
 			</div>
 		</div>
-		<div class="bottom text-center">
+		<div class="bottom">
 			<div class="container">
-				<div class="row">
-					<div class="copyright col-sm-6 text-sm-left">&copy; <span>sch&Ouml;n.</span> -
+				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+					<div class="copyright">&copy; <span>sch&Ouml;n.</span> -
 						All rights
 						Reserved
 					</div>
-					<div class="payment col-sm-6 text-sm-right">
+					<div class="payment">
 						<i class="icon-cc-visa"></i>
 						<i class="icon-cc-mastercard"></i>
 						<i class="icon-cc-amex"></i>
@@ -493,8 +493,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div class="view-container"></div> -->
 
 	<script>
 		$(document).ready(function () {

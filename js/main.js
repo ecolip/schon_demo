@@ -17,8 +17,36 @@ $(document).ready(function(){
 			$(this).closest('.dropdown-menu').removeClass('active');
 		});
 	});
+	$('.navbar-nav .bags').on('click', '.icon-cancel-1', function(e){
+		console.log('do');
+		var result = confirm('Are you want to delete?');
+		if(result){
+			$(e.currentTarget).closest('.media').remove();
+		}
+	});
+
+	//order->language choice
+	$('.language').click(function(){
+		$('.language-menu').toggleClass('active');
+	});
+
+	//Home->popup
+	//設定latterState狀態為true
+	var latterState = true; 
+	//當window滾動時，觸發判斷式
+	$(window).scroll(function(){
+		if(latterState && $(window).scrollTop() > 100){
+			$('.popup-container').addClass('active');
+		}
+	});
+	//當點取消時移除active，並更改latterState狀態為false
+	//只要latterState狀態為false，判斷式內的程式就不會被觸發
+	$('.icon-cancel').click(function(e){
+		$(this).closest('.popup-container').removeClass('active');
+		latterState = false;
+	});
 	
-	//product-> detail
+	//product-detail
 	$('.tab li').click(function(e){
 		var index = $(e.currentTarget).index();
 		
@@ -35,18 +63,11 @@ $(document).ready(function(){
 		$('.featureds .featured').removeClass('active').eq(indexPage).addClass('active');
 	});
 
-	//order->language choice
-	$('.language').click(function(){
-		$('.language-menu').toggleClass('active');
+	//order-shopping-car
+	$('.shopping-items').on('click', '.btn', function(e){
+		var result = confirm('Are you want to delete?');
+		if(result){
+			$(e.currentTarget).closest('li').remove();
+		}
 	});
-
-	
-
-	//popup
-	$(document).scroll(function(){
-		$('.popup-container').fadeIn();
-		$('.popup-container .icon-cancel').click(function(e){
-			$('.popup-container').fadeOut();
-		});	
-	});	
 });
