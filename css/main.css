@@ -1822,6 +1822,10 @@ button.checkout {
   font-size: 30px;
   color: #A1A1A1;
 }
+.product-detail .content .product-sale .slick-prev:focus,
+.product-detail .content .product-sale .slick-next:focus {
+  outline: none;
+}
 .product-detail .content .product-sale .slick-next {
   top: 0;
   right: 0;
@@ -2465,23 +2469,24 @@ button.checkout {
   color: #535353;
 }
 .p404-3 .input-container {
-  width: 600px;
-  height: 32px;
+  width: 80%;
+  height: 40px;
   border: 2px solid #535353;
 }
 .p404-3 .input-container input {
   width: 95%;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 600;
   color: #535353;
   outline: none;
 }
-.p404-3 .input-container input::-webkit-input-placeholder {
-  font-size: 12px;
+.p404-3 .input-container input::placeholder {
+  font-size: 15px;
   font-weight: 700;
   color: #535353;
 }
 .p404-3 .input-container input::-moz-input-placeholder {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: #535353;
 }
@@ -2491,8 +2496,8 @@ button.checkout {
   color: #535353;
 }
 .p404-3 .input-container i {
-  margin: 5px 10px;
-  font-size: 12px;
+  margin: 7px 15px;
+  font-size: 15px;
 }
 .p404-3 a {
   font-size: 13px;
@@ -2507,7 +2512,6 @@ button.checkout {
   background: #eee;
 }
 .p404-4 .title {
-  padding-left: 32%;
   line-height: 1;
   font-size: 180px;
   font-weight: 700;
@@ -2524,53 +2528,58 @@ button.checkout {
   color: #535353;
 }
 .p404-4 .btn {
-  width: 110px;
-  height: 28px;
+  width: 140px;
+  height: 35px;
   padding: 0;
   line-height: 1;
   background: #535353;
   border-radius: 0;
-  font-size: 10px;
+  font-size: 12px;
 }
 .p404-4 .btn a {
   font-weight: 600;
 }
 .p404-4 .input-container {
   width: 380px;
+  height: 35px;
   border: 2px solid #535353;
 }
 .p404-4 .input-container input {
   width: 95%;
-  font-size: 10px;
+  font-size: 14px;
+  font-weight: 700;
   color: #535353;
   outline: none;
 }
-.p404-4 .input-container input::-webkit-input-placeholder {
-  font-size: 12px;
+.p404-4 .input-container input::placeholder {
+  font-size: 14px;
+  font-weight: 700;
   color: #535353;
 }
 .p404-4 .input-container input::-moz-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   color: #535353;
 }
 .p404-4 .input-container input::-ms-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   color: #535353;
 }
 .p404-4 .input-container i {
-  margin: 3px 10px;
-  font-size: 12px;
+  margin: 4px 15px;
+  font-size: 14px;
+  color: #535353;
+  cursor: pointer;
 }
 .p404-5 {
   height: 100vh;
 }
 .p404-5 .box {
   height: 100%;
-  background: url(http://placeimg.com/1600/1000/nature) no-repeat;
-  background-size: cover;
+  background: url(http://placeimg.com/1200/1200/any);
 }
 .p404-5 .title {
-  padding-left: 32%;
   line-height: 1;
   font-size: 180px;
   font-weight: 700;
@@ -2584,40 +2593,52 @@ button.checkout {
   font-size: 13px;
 }
 .p404-5 .btn {
-  width: 110px;
-  height: 28px;
+  width: 140px;
+  height: 35px;
   padding: 0;
   line-height: 1;
   border-radius: 0;
-  font-size: 10px;
+  font-size: 14px;
 }
 .p404-5 .btn a {
-  font-weight: 600;
-  color: #535353;
+  color: #494949;
+  font-weight: 700;
 }
 .p404-5 .input-container {
   width: 380px;
+  height: 35px;
   border: 2px solid white;
 }
 .p404-5 .input-container input {
   width: 95%;
-  font-size: 10px;
-  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  color: #535353;
   outline: none;
 }
-.p404-5 .input-container input::-webkit-input-placeholder {
-  font-size: 12px;
+.p404-5 .input-container input::placeholder {
+  font-size: 14px;
+  font-weight: 700;
   color: white;
 }
 .p404-5 .input-container input::-moz-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   color: white;
 }
 .p404-5 .input-container input::-ms-input-placeholder {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   color: white;
 }
 .p404-5 .input-container i {
-  margin: 3px 10px;
-  font-size: 12px;
+  margin: 4px 15px;
+  font-size: 14px;
+  color: #535353;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .p404-3 .input-container {
+    width: 48%;
+  }
 }

@@ -43,14 +43,10 @@ $(document).ready(function(){
 	
 
 	//popup
-	// $(document).scroll(function(){
-	// 	var scrollTop = $(document).scrollTop();
-		
-	// 	if(scrollTop==1){
-	// 		$('.popup-container').fadeIn();
-	// 		$('.popup-container .icon-cancel').click(function(e){
-	// 			$('.popup-container').fadeOut();
-	// 		});	
-	// 	}		
-	// });	
+	$(document).scroll(function(){
+		$('.popup-container').fadeIn();
+		$('.popup-container .icon-cancel').click(function(e){
+			$('.popup-container').fadeOut();
+		});	
+	});	
 });
