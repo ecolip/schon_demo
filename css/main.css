@@ -1107,7 +1107,6 @@ button.checkout {
 #footer .signs .input-container input {
   width: 95%;
   padding: 4px;
-  line-height: 1;
   outline: none;
 }
 #footer .signs .input-container a {
@@ -1805,8 +1804,27 @@ button.checkout {
   font-weight: 600;
   color: #A1A1A1;
 }
-.product-detail .content .product-sale .owl-thumb-item {
+.product-detail .content .product-sale .slick-slider {
+  margin-bottom: 20px;
+}
+.product-detail .content .product-sale .slide-for img {
+  margin: 0 15px;
+}
+.product-detail .content .product-sale .slick-prev,
+.product-detail .content .product-sale .slick-next {
+  position: absolute;
+  width: 30px;
+  height: 100%;
   padding: 0;
+  border: none;
+  background: white;
+  z-index: 1;
+  font-size: 30px;
+  color: #A1A1A1;
+}
+.product-detail .content .product-sale .slick-next {
+  top: 0;
+  right: 0;
 }
 .product-detail .content .product-sale .breadcrumbs a,
 .product-detail .content .product-sale .breadcrumbs i {

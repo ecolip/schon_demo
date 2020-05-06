@@ -20,12 +20,9 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
-
-
-
 </head>
 
 <body>
@@ -414,8 +411,8 @@
 					<div class="tab pb-2 pb-sm-0">
 						<ul class="list-unstyled">
 							<li class="d-inline-block"><a class="active" href="#">FEATURED</a></li>
-							<li class="d-inline-block bordered"><a href="#">LATEST</a></li>
-							<li class="d-inline-block"><a href="#">BEST SELLER</a></li>
+							<li class="d-inline-block bordered"><a href="#latest">LATEST</a></li>
+							<li class="d-inline-block"><a href="#best-sellers">BEST SELLER</a></li>
 						</ul>
 					</div>
 				</div>
@@ -491,7 +488,7 @@
 					</div>
 				</div>
 
-				<div class="furnitures">
+				<div id="latest" class="furnitures">
 					<div class="container">
 						<div class="row">
 							<div class="mb-4 col-lg-6 col-xl-4 mb-xl-0">
@@ -537,7 +534,7 @@
 			</div>
 		</div>
 
-		<div class="best-sellers pb-5 mb-4">
+		<div id="best-sellers" class="best-sellers pb-5 mb-4">
 			<div class="container position-relative">
 				<div class="infos py-4">
 					<div class="title">BEST SLLER</div>
@@ -663,24 +660,24 @@
 	</div>
 
 	<div id="footer" class="text-center text-xl-left">
-		<div class="free-shipping">
-			<div class="container">
-				<div class="row">
-					<div class="text-center pb-4 col-md-6 text-md-left col-xl-3 pb-xl-0">
+		<div class="container">
+			<div class="free-shipping">
+				<div class="row text-center text-xl-left d-xl-flex justify-content-xl-between">
+					<div class="col-md-6 col-xl-3">
 						<i class="icon-flight"></i>
 						<div class="package d-inline-block">
 							<div class="free-shipping-title">FREE SHIPPING</div>
 							<div class="free-shipping-subtitle">Free shipping on all US order</div>
 						</div>
 					</div>
-					<div class="text-center pb-4 col-md-6 text-md-left col-xl-3 pb-xl-0">
+					<div class="col-md-6 col-xl-3">
 						<i class="icon-lifebuoy"></i>
 						<div class="package d-inline-block">
 							<div class="free-shipping-title text-left">SUPPORT 24/7</div>
 							<div class="free-shipping-subtitle">We support 24 hours a day</div>
 						</div>
 					</div>
-					<div class="text-center pb-4 col-md-6 pb-md-0 text-md-left col-xl-3 pb-xl-0">
+					<div class="col-md-6 col-xl-3">
 						<div class="pl-xl-3">
 							<i class="icon-dropbox"></i>
 							<div class="package d-inline-block">
@@ -689,11 +686,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="text-center col-md-6 text-md-left col-xl-3">
-						<i class="icon-money"></i>
-						<div class="package d-inline-block">
-							<div class="free-shipping-title">PAYMENT 100% SECURE</div>
-							<div class="free-shipping-subtitle">payment 100% secure</div>
+					<div class="col-md-6 col-xl-3">
+						<div class="box">
+							<i class="icon-money"></i>
+							<div class="package d-inline-block">
+								<div class="free-shipping-title">PAYMENT 100% SECURE</div>
+								<div class="free-shipping-subtitle">payment 100% secure</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -790,10 +789,10 @@
 
 		<div class="bottom">
 			<div class="container">
-				<div class="row">
-					<div class="copyright col-sm-6 text-sm-left">&copy;<span>sch&Ouml;n.</span> - All rights Reserved
+				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+					<div class="copyright">&copy;<span>sch&Ouml;n.</span> - All rights Reserved
 					</div>
-					<div class="payment col-sm-6 text-sm-right">
+					<div class="payment">
 						<img src="image/payment.png" alt="payment">
 					</div>
 				</div>

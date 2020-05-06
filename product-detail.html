@@ -15,18 +15,16 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/fontello.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/slick.css" />
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
-	<!-- <scrip src="js/owl.carousel2.thumbs.min.js"></scrip> -->
 	<script src="js/main.js"></script>
-
-
-
 </head>
 
 <body class="product-detail">
@@ -245,17 +243,21 @@
 							<i class="icon-share"></i><span>14</span>
 						</div>
 						<div class="product-sm-list px-3 mx-3">
-							<div class="owl-carousel">
-								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/666" class="mb-3" alt="products">
-								<img src="https://dummyimage.com/510x510/fff/222" class="mb-3" alt="products">
+							<div class="slider-for">
+								<div><img src="https://dummyimage.com/510x510/fff/999"></div>
+								<div><img src="https://dummyimage.com/510x510/fff/222"></div>
+								<div><img src="https://dummyimage.com/510x510/fff/999"></div>
+								<div><img src="https://dummyimage.com/510x510/fff/222"></div>
+								<div><img src="https://dummyimage.com/510x510/fff/999"></div>
+								<div><img src="https://dummyimage.com/510x510/fff/222"></div>
 							</div>
-							<div class="owl-thumbs" data-slider-id="1">
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
-								<button class="owl-thumb-item"><img src="https://dummyimage.com/105x105/fff/666" alt="product"></button>
+							<div class="slider-nav">
+								<div><img src="https://dummyimage.com/105x105/fff/999"></div>
+								<div><img src="https://dummyimage.com/105x105/fff/222"></div>
+								<div><img src="https://dummyimage.com/105x105/fff/999"></div>
+								<div><img src="https://dummyimage.com/105x105/fff/222"></div>
+								<div><img src="https://dummyimage.com/105x105/fff/999"></div>
+								<div><img src="https://dummyimage.com/105x105/fff/222"></div>
 							</div>
 						</div>
 					</div>
@@ -617,21 +619,22 @@
 
 	<script>
 		$(document).ready(function () {
-			$('.product-sale .owl-carousel').owlCarousel({
-				items: 1,
-				nav: true,
-				dots:false,
-				thumbs: true,
-				thumbsPrerendered: true,
-				thumbImage:false,
-				thumbContainer: 'owl-thumbs',
-				thumbItemClass:'owl-thumb-item',
-				// loop: true,	/*Infinity loop*/
-				// autoplay: true, /**/
-				// autoplayTimeout: 3000, /* 輪播速度*/
+			$('.slider-for').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: '.slider-nav',
 			});
-		});
-		$(document).ready(function () {
+			$('.slider-nav').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				asNavFor: '.slider-for',
+				prevArrow: '<button type="button" class="slick-prev"><i class="icon-angle-left"></button>',
+				nextArrow: '<button type="button" class="slick-next"><i class="icon-angle-right"></button>',
+				focusOnSelect: true,
+			});
+
 			$('.best-sellers .owl-carousel').owlCarousel({
 				items: 5,
 				margin: 32,
@@ -654,7 +657,19 @@
 				}
 			});
 		});
-
+		// $(document).ready(function () {
+		// 	$('.product-sale .owl-carousel').owlCarousel({
+		// 		items: 1,
+		// 		nav: true,
+		// 		dots:false,
+		// 		thumbs: true,
+		// 		thumbsPrerendered: true, /*一開啟網頁就先渲染設定避免FOUC*/
+		// 		// thumbImage: true, /*寫true，owl-thumbs裡面的img就可省略，系統自動會產生img*/
+		// 		// loop: true,	/*Infinity loop*/
+		// 		// autoplay: true, /**/
+		// 		// autoplayTimeout: 3000, /* 輪播速度*/
+		// 	});
+		// });
 	</script>
 </body>
 
