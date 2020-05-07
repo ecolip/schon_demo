@@ -1811,13 +1811,17 @@ button.checkout {
 .product-detail .content .product-sale .slick-slider {
   margin-bottom: 20px;
 }
+.product-detail .content .product-sale .slider-nav .slick-list {
+  width: 88%;
+  margin: 0 auto;
+}
 .product-detail .content .product-sale .slider-nav .slick-list .slick-slide img {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .product-detail .content .product-sale .slick-prev,
 .product-detail .content .product-sale .slick-next {
   position: absolute;
-  width: 30px;
+  width: 25px;
   height: 100%;
   padding: 0;
   border: none;
@@ -1830,9 +1834,19 @@ button.checkout {
 .product-detail .content .product-sale .slick-next:focus {
   outline: none;
 }
+.product-detail .content .product-sale .slick-prev i,
+.product-detail .content .product-sale .slick-next i {
+  position: relative;
+}
 .product-detail .content .product-sale .slick-next {
   top: 0;
   right: 0;
+}
+.product-detail .content .product-sale .slick-next i {
+  right: 6px;
+}
+.product-detail .content .product-sale .slick-prev i {
+  right: 9px;
 }
 .product-detail .content .product-sale .breadcrumbs a,
 .product-detail .content .product-sale .breadcrumbs i {
