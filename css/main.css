@@ -339,9 +339,13 @@ button.checkout {
   color: #494949;
 }
 .page-title .breadcrumbs a,
-.page-title .breadcrumbs i {
+.page-title .breadcrumbs i,
+.page-title .breadcrumbs span {
   font-size: 13px;
   color: #535353;
+}
+.page-title .breadcrumbs span {
+  font-size: 13px;
 }
 .shops {
   line-height: 24px;
@@ -1617,7 +1621,8 @@ button.checkout {
   padding: 10px 0;
   background-color: #EDEDED;
 }
-.blog-full-width .content .breadcrumbs a {
+.blog-full-width .content .breadcrumbs a,
+.blog-full-width .content .breadcrumbs span {
   font-size: 13px;
   font-weight: 600;
   color: #494949;
@@ -1852,9 +1857,13 @@ button.checkout {
   right: 9px;
 }
 .product-detail .content .product-sale .breadcrumbs a,
-.product-detail .content .product-sale .breadcrumbs i {
+.product-detail .content .product-sale .breadcrumbs i,
+.product-detail .content .product-sale .breadcrumbs span {
   font-size: 13px;
   color: #A1A1A1;
+}
+.product-detail .content .product-sale .breadcrumbs span {
+  font-size: 13px;
 }
 .product-detail .content .product-sale .title {
   font-size: 40px;
@@ -2122,8 +2131,12 @@ button.checkout {
   padding-bottom: 25px;
 }
 .order-shopping-car .content .page-title .breadcrumbs a,
-.order-shopping-car .content .page-title .breadcrumbs i {
+.order-shopping-car .content .page-title .breadcrumbs i,
+.order-shopping-car .content .page-title .breadcrumbs span {
   color: #A0A0A0;
+}
+.order-shopping-car .content .page-title .breadcrumbs span {
+  font-size: 13px;
 }
 .order-shopping-car .content .flows li {
   color: #A1A1A1;
