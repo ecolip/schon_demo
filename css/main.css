@@ -2603,7 +2603,7 @@ button.checkout {
 }
 .p404-5 .box {
   height: 100%;
-  background: url(http://placeimg.com/1200/1200/any);
+  background: url(http://placeimg.com/1600/1600/any) no-repeat center;
 }
 .p404-5 .title {
   line-height: 1;
@@ -2639,7 +2639,7 @@ button.checkout {
   width: 95%;
   font-size: 14px;
   font-weight: 700;
-  color: #535353;
+  color: white;
   outline: none;
 }
 .p404-5 .input-container input::placeholder {
