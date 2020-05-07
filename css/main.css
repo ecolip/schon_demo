@@ -429,75 +429,6 @@ button.checkout {
 .language .language-menu.active {
   display: block;
 }
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-}
-.popup-container.active {
-  display: block;
-}
-.popup-container .popup {
-  width: 792px;
-  height: 420px;
-  position: relative;
-  top: 20%;
-  margin: 0 auto;
-  padding: 85px 80px 0 80px;
-  z-index: 1;
-  background: url(http://placeimg.com/780/450/tech) no-repeat;
-  background-size: cover;
-}
-.popup-container .title {
-  font-size: 32px;
-  font-weight: 800;
-}
-.popup-container .icon-cancel {
-  position: absolute;
-  top: 6%;
-  right: 3%;
-  font-size: 17px;
-  color: #A1A1A1;
-  cursor: pointer;
-}
-.popup-container p {
-  font-size: 16px;
-  font-weight: 600;
-  color: #757575;
-}
-.popup-container p span {
-  color: red;
-}
-.popup-container .form-control {
-  width: 374px;
-  height: 47px;
-  margin-bottom: 10px;
-  border-radius: 25px;
-  background-color: #F1F1F1;
-  font-size: 13px;
-}
-.popup-container .btn {
-  width: 122px;
-  height: 35px;
-  margin-bottom: 60px;
-  background-color: #FF8282;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 18px;
-}
-.popup-container .form-check-input {
-  margin-top: 0.5rem;
-}
-.popup-container .form-check-label {
-  font-size: 10px;
-  color: #A1A1A1;
-}
 .free-shipping i {
   font-size: 42px;
   color: #838182;
@@ -563,6 +494,75 @@ button.checkout {
 #footer-simple .copyright {
   font-size: 11px;
   font-weight: 500;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.popup-container.active {
+  display: block;
+}
+.popup-container .popup {
+  max-width: 792px;
+  max-height: 420px;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  padding: 85px 20px 85px;
+  z-index: 1;
+  background: url(http://placeimg.com/780/450/tech) no-repeat;
+  background-size: cover;
+}
+.popup-container .title {
+  font-size: 32px;
+  font-weight: 800;
+}
+.popup-container .icon-cancel {
+  position: absolute;
+  top: 6%;
+  right: 3%;
+  font-size: 17px;
+  color: #A1A1A1;
+  cursor: pointer;
+}
+.popup-container p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #757575;
+}
+.popup-container p span {
+  color: red;
+}
+.popup-container .form-control {
+  width: 100%;
+  height: 47px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background-color: #F1F1F1;
+  font-size: 13px;
+}
+.popup-container .btn {
+  width: 122px;
+  height: 35px;
+  margin-bottom: 60px;
+  background-color: #FF8282;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 18px;
+}
+.popup-container .form-check-input {
+  margin-top: 0.5rem;
+}
+.popup-container .form-check-label {
+  font-size: 10px;
+  color: #A1A1A1;
 }
 /*home*/
 .header-bf {
@@ -1174,6 +1174,11 @@ button.checkout {
 #footer .bottom .payment img {
   width: 280px;
 }
+@media (min-width: 576px) {
+  .popup-container .form-control {
+    width: 374px;
+  }
+}
 @media (min-width: 992px) {
   .categories .col-lg-4 {
     flex: 0 0 35.5%;
@@ -1182,6 +1187,9 @@ button.checkout {
   .categories .col-lg-8 {
     flex: 0 0 64.5%;
     max-width: 64.5%;
+  }
+  .popup-container .popup {
+    padding: 85px 80px 0 80px;
   }
 }
 @media (min-width: 1200px) {
