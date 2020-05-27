@@ -252,12 +252,12 @@
 						</div>
 					</div>
 					<div class="col-xl-5">
-						<form action="" class="pl-xl-5">
+						<form action="" class="pl-xl-5" method="POST">
 							<div class="title text-left pb-3">Have a question?</div>
-							<input class="form-control" type="text" placeholder="Name">
-							<input class="form-control" type="text" placeholder="E-Mail">
-							<input class="form-control" type="text" placeholder="Subject">
-							<textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="3"
+							<input class="form-control" type="text" name="name" placeholder="Name">
+							<input class="form-control" type="email" name="email" placeholder="E-Mail">
+							<input class="form-control" type="text" name="subject" placeholder="Subject">
+							<textarea class="form-control mb-2" type="text" name="message" id="exampleFormControlTextarea1" rows="3"
 								placeholder="Message"></textarea>
 							<button type="submit" class="btn mt-1">Send</button>
 						</form>

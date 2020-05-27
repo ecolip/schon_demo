@@ -1044,6 +1044,10 @@ button.checkout {
 .content .brands .owl-next {
   top: 8px;
 }
+.content .brands .owl-prev:focus,
+.content .brands .owl-next:focus {
+  outline: none;
+}
 .content .brands .owl-next {
   right: 0;
 }
@@ -1424,7 +1428,7 @@ button.checkout {
 }
 .contacts .content .page-title {
   padding-top: 60px;
-  background-image: url(http://placeimg.com/1200/500/nature);
+  background-image: url(http://placeimg.com/1200/500/any);
   background-size: cover;
   background-position: 50% 50%;
 }
