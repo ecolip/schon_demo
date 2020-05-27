@@ -36,13 +36,13 @@ $(document).ready(function(){
 	//當window滾動時，觸發判斷式
 	$(window).scroll(function(){
 		if(latterState && $(window).scrollTop() > 100){
-			$('.popup-container').addClass('active');
+			$('.popup-container').fadeIn();
 		}
 	});
 	//當點取消時移除active，並更改latterState狀態為false
 	//只要latterState狀態為false，判斷式內的程式就不會被觸發
 	$('.icon-cancel').click(function(e){
-		$(this).closest('.popup-container').removeClass('active');
+		$(this).closest('.popup-container').fadeOut();
 		latterState = false;
 	});
 	
@@ -70,4 +70,15 @@ $(document).ready(function(){
 			$(e.currentTarget).closest('li').remove();
 		}
 	});
+
+	//contacts
+	// $('.chair-maker .btn').click(function(e){
+	// 	var result = $('#myform').serialize();
+	// 	alert('確定要送出:'+ $('#myform').serialize()+'?'); //html input要有name當作key，而值是value
+
+	// 	// $.post('php/create.php', {content: 'result'}, function(data,textStatus, xhr){
+	// 	// 	//optional stuff to do after success
+	// 	// }, 'json');
+	// });
+	
 });

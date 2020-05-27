@@ -505,9 +505,6 @@ button.checkout {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
-.popup-container.active {
-  display: block;
-}
 .popup-container .popup {
   max-width: 792px;
   max-height: 420px;
