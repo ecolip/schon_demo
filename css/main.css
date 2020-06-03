@@ -2,6 +2,9 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
+button:focus {
+  outline: none;
+}
 img {
   width: 100%;
 }
@@ -98,7 +101,7 @@ button.update {
   border: 1px solid #C0C0C0;
   background-color: #F6F6F5;
 }
-button.checkout {
+a .checkout {
   font-size: 18px;
   font-weight: 700;
   color: white;
