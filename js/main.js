@@ -45,6 +45,26 @@ $(document).ready(function(){
 		$(this).closest('.popup-container').fadeOut();
 		latterState = false;
 	});
+
+	//home->click ancher, animate scroll to target
+	//click ancher, prevent original action
+	//get ancher attr
+	//get ancher position
+	//body animate scroll to position of ancher
+	$('.featureds a.move').on('click', function(e){
+		e.preventDefault();
+		var target = $(this).attr('href');
+		$('html, body').animate({scrollTop:$(target).offset().top}, 600);
+	});
+
+	//home->click top, animate scroll to scrollTop
+	//click top
+	//body animate scroll to scrollTop 0
+	$('#top').on('click', function(e){
+		$('html, body').animate({scrollTop: 0},600);
+		// var target = $(this).attr('href');
+		// $('html, body').animate({scrollTop: $(target).offset().top}, 600);
+	});
 	
 	//product-detail
 	$('.tab li').click(function(e){

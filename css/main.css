@@ -564,6 +564,20 @@ a .checkout {
   font-size: 10px;
   color: #A1A1A1;
 }
+#top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  line-height: 40px;
+  font-size: 13px;
+  cursor: pointer;
+}
+#top:hover {
+  font-weight: 600;
+}
 /*home*/
 .header-bf {
   font-size: 12px;
